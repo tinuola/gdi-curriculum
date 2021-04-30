@@ -1,0 +1,32 @@
+.button-large { 
+	font-size: 1em; 
+	color: white;
+	background-color: #01a9b4;
+	border-radius: .25em;
+	cursor: pointer;
+}
+.button-large:hover {
+	background-color:#f9b8bb;
+}
+
+.half {
+	width: 49%;
+	display: inline-block;
+}
+.reveal .push, .reveal .right + p {
+	padding-top: 1em;
+}
+
+.reveal .animate-me {
+	margin: 1em auto;
+    width: 100px; 
+    height: 100px;    
+    background: #01A9B4;
+	animation: spin 4s infinite ease-in;
+	clear: both;
+}
+
+@keyframes spin {
+	0%  {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}

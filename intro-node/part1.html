@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Intro to Node.js ~ Girl Develop It</title>
+
+  <meta name="description" content="An introduction to Node.js">
+  <meta name="author" content="Girl Develop It">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+  <!-- dark editor-->
+  <link rel="stylesheet" href="lib/css/dark.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = "css/print/pdf.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    }
+  </script>
+
+  <!-- If use the PDF print sheet so students can print slides-->
+
+  <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <style>
+    .reveal section img {
+      box-shadow: none;
+    }
+  </style>
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Opening -->
+      <section>
+        <img src="img/circle-gdi-logo.png" alt="GDI Logo" />
+        <h3>Intro to Node.js Part 1</h3>
+      </section>
+      <section>
+        <h3>Welcome!</h3>
+        <div class="left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3>Welcome!</h3>
+        <div class="left-align">
+          <p class="blue">Tell us about yourself.</p>
+          <ul>
+            <li>Who are you?</li>
+            <li>What do you hope to get out of the class?</li>
+            <li>What is your favorite dinosaur?</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>The plan</h2>
+        <ul>
+          <li>What is Node</li>
+          <li>What is npm</li>
+          <li>Using node packages</li>
+          <li>Overview of server response cycle</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Quick CLI review!</h1>
+      </section>
+      <section>
+        <h2>Commands used often:</h2>
+        <ul>
+          <li>mkdir</li>
+          <li>cd</li>
+          <li>ls [-la]</li>
+          <li>cat</li>
+          <li>rm [-rf]</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Node.js</h2>
+        <ul>
+          <li>Server-side JavaScript</li>
+          <li>Event-driven</li>
+          <li>Non-blocking</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Server-side?</h1>
+      </section>
+      <section>
+        <h3>Clients and servers</h3>
+        <p>How your computer accesses websites</p>
+        <p>But ALSO how computers talk to <em>each other</em></p>
+        <img src="img/client-server.png" />
+        <strike><p class = "fragment">JavaScript (in our context) is "client side"</p></strike>
+        <p class="fragment">You can run JavaScript on the server with the help of Node.js!</p>
+      </section>
+      <section>
+        <h1>What does non-blocking mean?</h1>
+        <h4>(prepare for silly exercise)</h4>
+        <aside class="notes">
+          Ask for two participants. Inform them that they are two web services, and they accept requests. Ask student A to say "banana" when you point to her, but sometimes waiting a couple seconds because sometimes requests take a little while. After student A
+          has said "banana," point to student B who says "dance".
+        </aside>
+      </section>
+      <section>
+        <img src="img/bananadance.gif" />
+      </section>
+      <section>
+        <h2>When to use Node</h2>
+        <ul>
+          <li class="fragment">Scripting on your computer</li>
+          <li class="fragment">Setting up a web server</li>
+          <li class="fragment">Building a cross-platform app (ex. Electron)</li>
+          <li class="fragment">Managing dependencies (npm)</li>
+          <li class="fragment"><strike>Take over the world</strike> Maybe?</li>
+        </ul>
+      </section>
+      <!-- Exercise-->
+      <section>
+        <h3>Let's Develop It!</h3>
+        <ul>
+          <li>If you haven't yet installed the required materials, install: git and nvm</li>
+          <li>Install version 8.9.4 of Node (LTS) with <code>nvm install 8.9.4</code></li>
+          <li>Run <code>node -v</code> in your terminal and see what it says</li>
+          <li>Node comes with npm, but make sure yours is up to date with <code>npm install npm@latest -g</code></li>
+          <li>Run <code>npm -v</code> in your terminal and see what it says</li>
+          <li>Run <code>node</code> to access the REPL, try out some JS! Use <code>.exit</code> to exit</li>
+          <li><strong>BONUS</strong> Create a JavaScript file and run it from the command line using <code>node [YOUR_FILE].js</code></li>
+        </ul>
+      </section>
+      <section>
+        <h1>npm</h1>
+      </section>
+      <section>
+        <h2>npm</h2>
+        <ul>
+          <li>“node package manager,” but also "the package manager for JavaScript" according to <a href="https://www.npmjs.com/">npmjs.com</a></li>
+          <li>Package ecosystem</li>
+          <li><a href="http://www.modulecounts.com/">Largest ecosystem of open source libraries in the world!</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>NPM packages</h2>
+
+        <h3>Some examples</h3>
+        <ul>
+          <li><a href="https://www.npmjs.com/package/lodash">lodash</a></li>
+          <li><a href="https://www.npmjs.com/package/webpack">webpack</a></li>
+          <li><a href="https://www.npmjs.com/package/react">react</a></li>
+          <li><a href="https://www.npmjs.com/package/express">express</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Let's Develop It! (together)</h3>
+        <ul>
+          <li>Make a new directory and <code>cd</code> into it</li>
+          <li>Run <code>npm init</code></li>
+          <li>What happens with <code>npm init --yes</code>?</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Writing a Node script</h2>
+      </section>
+      <section>
+        <h3>Node.js API</h3>
+        <p>Node.js contains many useful core modules for us to use, such one to use the file system</p>
+        <pre><code>const fs = require('fs');
+fs.readFile('ourfile.txt', 'utf8', function(err, data) {
+  // do things
+});
+const data = fs.readFileSync('ourfile.txt', 'utf8');
+      </code></pre>
+      </section>
+      <section>
+        <h3>Let's Develop It!<sup>0</sup></h3>
+        <ul>
+          <li>Create a file called script.js</li>
+          <li>Download <a href="https://www.gutenberg.org/files/84/84-0.txt">Frankenstein</a> text file</li>
+          <li>Load the file and count instances of the word "monster," and print to stdout (our terminal)</li>
+          <li>BONUS: What other interesting stats can you calculate for this book? Try using both readFile and readFileSync</li>
+        </ul>
+      </section>
+      <section>
+        <h2>What's a package.json?</h2>
+        <p><code>package.json</code> is a <strong>JSON</strong> file that defines information about your app, and npm knows about it</p>
+      </section>
+      <section>
+        <h2>What's a package.json?</h2>
+        <p>There are <a href="https://docs.npmjs.com/files/package.json">some rules</a> around names and other parts of your package.json, and npm will warn you if it doesn't like something</p>
+      </section>
+      <section>
+        <h2>npm install</h2>
+        <ul>
+          <li>Different behavior depending on arguments</li>
+          <li>With arg: Installs a package and its dependencies to your <code>node_modules</code> folder</li>
+          <li>Without arg: In node project folder, will install the dependencies in the <code>package.json</code></li>
+        </ul>
+        <aside class="notes">
+          One of the most common things you will do with npm is install. This installs dependencies to your node_modules folder.
+        </aside>
+      </section>
+      <section>
+        <h2>Example</h2>
+        <code>npm install express</code>
+        <aside class="notes">After running this, we can see in our node_modules folder there's a lot of stuff that wasn't there before</aside>
+      </section>
+      <section>
+        <h2>Example</h2>
+        <p><code>npm install express</code></p>
+        <p><code>npm install express lodash ...</code></p>
+        <p>Tell npm to save a package to your package.json, or install multiple packages at once!</p>
+      </section>
+      <section>
+        <h2>More install!</h2>
+        <p><code>npm install</code> is smart!</p>
+        <ul>
+          <li>Github remotes <code>npm install foo/foo</code></li>
+          <li>Folders <code>npm install ../foo</code></li>
+          <li>Package at version <code>npm install foo@1.0</code></li>
+          <li>Install a package globally <code>npm install -g foo</code></li>
+        </ul>
+        <p><a href="https://docs.npmjs.com/cli/install">More details in the CLI docs</a></p>
+      </section>
+      <section>
+        <h2>What are dependencies?</h2>
+        <p>A dependency is something <em>your</em> application needs to run (it <em>depends</em> on it!).</p>
+      </section>
+      <section>
+        <h2>What are dependencies?</h2>
+        <p>You might install a dependency that relies on something else, adding it to your <code>dependency chain</code>.</p>
+        <p>Check out the dependency chain for <a href="https://github.com/expressjs/express/blob/master/package.json">express</a>.</p>
+      </section>
+      <section>
+        <h2>What are dependencies?</h2>
+        <p>Some dependencies are only used in development mode (vs production), and these are known as <code>devDependencies</code> in the package.json file.</p>
+      </section>
+      <section>
+        <h2>Example</h2>
+        <p><code>npm install jest --save-dev</code></p>
+        <p><code>npm install jest -D</code></p>
+        <p>You can install packages as dev dependencies, meaning people who run the built package don't require these modules.</p>
+      </section>
+      <section>
+        <h2>Packages vs. Modules</h2>
+        <blockquote>In the Node.js module system, each file is treated as a separate module. </blockquote>
+        <p><a href="https://nodejs.org/api/modules.html">(source)</a></p>
+        <p>A package describes a group of 1+ modules</p>
+      </section>
+      <section>
+        <h2>How do we use a module?</h2>
+        <pre>
+                      <code contenteditable class ="javascript">
+                    var express = require('express');
+                      </code>
+                    </pre>
+      </section>
+      <section>
+        <h3>Let's Develop It!<sup>1</sup></h3>
+
+        <ul>
+          <li>Run <code>npm install express</code></li>
+          <li>What happened to your package.json file?</li>
+          <li>Remove the <code>node_modules</code> folder, and run <code>npm install</code>. npm installs your defined dependency!
+          </li>
+          <li>Create an <code>app.js</code> file and require express</li>
+          <li><strong>BONUS</strong>: Add node_modules/ to your .gitignore file</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Express.js</li>
+      </section>
+      <section>
+          <h2>Express features</h2>
+          <ul>
+              <li>Routes</li>
+              <li>Requests</li>
+              <li>Views</li>
+          </ul>
+      </section>
+      <section>
+          <h2>Simple Express Server</h2>
+          <pre>
+            <code contenteditable class ="javascript">
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+res.send('Welcome to the GDI Node Workshop!');
+});
+
+app.listen(3000, function () {
+console.log('Your app is listening on port 3000!');
+});
+              </code>
+          </pre>
+      </section>
+      <section>
+          <h2>Run the server from npm</h2>
+          <pre>
+            <code contenteditable class ="javascript">
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "node server.js"
+},
+              </code>
+          </pre>
+      </section>
+      <section>
+          <h2>npm scripts</h2>
+          <p><a href="https://docs.npmjs.com/misc/scripts">npm scripts</a> allow you to use npm to manage a lot of your app using easy commands like <code>npm start</code>, <code>npm test</code> and more.</p>
+      </section>
+      <section>
+          <h2>npm scripts</h2>
+          <p>People use "scripts" in package.json to: compile or preprocess code, run tests, build for a deployment or environment, or really anything!</p>
+      </section>
+      <section>
+          <h2>npm scripts</h2>
+          <p>If you define an arbitrary key (not in npm docs), you can run it using <code>npm run KEY</code></p>
+          <pre>
+            <code contenteditable class ="javascript">
+"scripts": {
+...
+"stuff": "echo \"LET'S DO STUFF\""
+}
+...
+$ npm run stuff
+              </code>
+          </pre>
+      </section>
+      <section>
+          <h3>Let's Develop It!<sup>2</sup></h3>
+
+          <ul>
+              <li>Update <code>app.js</code> to run a simple web server using Express</li>
+              <li>Add a command to package.json to make it easy to run, probably under "start"</li>
+          </ul>
+      </section>
+      <section>
+          <h2>HTTP Server Basics: Request/Response</h2>
+      </section>
+      <section>
+          <h2>Examples of HTTP requests:</h2>
+          <ul>
+              <li class="fragment">GET</li>
+              <li class="fragment">PUT</li>
+              <li class="fragment">POST</li>
+              <li class="fragment">DELETE</li>
+              <li class="fragment"><a href="https://www.w3.org/Protocols/rfc2616/rfc2616.txt">Behold the holy RFC for more about the HTTP protocol</a></li>
+          </ul>
+      </section>
+      <section>
+          <h2>And responses?</h2>
+
+          <p>They're what you get back from a request 😎</p>
+      </section>
+      <section>
+          <h2>Routes</h2>
+          <p>"Routes" define how a server should respond to a certain request at a certain end point or path.</p>
+          <pre>
+              <code contenteditable class ="javascript">
+// app.&lt;HTTP action>
+app.get('/', function (req, res) {
+res.send('Hello World!');
+});
+              </code>
+          </pre>
+      </section>
+      <section>
+          <h2>What we've learned</h2>
+          <ul>
+              <li>What is Node</li>
+              <li>What is npm</li>
+              <li>Used an npm module</li>
+              <li>Built a web server</li>
+          </ul>
+      </section>
+      <section>
+          <h2>Homework</h2>
+          <ul>
+              <li>Review exercises and bonus items</li>
+          </ul>
+          <p>Exercise solutions at <a href="https://github.com/pselle/Intro-to-Node.js-Exercises" alt="Exercises on GitHub">https://github.com/pselle/Intro-to-Node.js-Exercises</a></p>
+          </section>
+    </div>
+    <footer>
+      <div class="copyright">
+        Intro to Node.js -- GDI Philly 🔔 --
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
+  // Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  transition: "slide", // none/fade/slide/convex/concave/zoom
+
+  // Optional reveal.js plugins
+  dependencies: [
+    {
+      src: "lib/js/classList.js",
+      condition: function() {
+        return !document.body.classList;
+      }
+    },
+    {
+      src: "plugin/markdown/marked.js",
+      condition: function() {
+        return !!document.querySelector("[data-markdown]");
+      }
+    },
+    {
+      src: "plugin/markdown/markdown.js",
+      condition: function() {
+        return !!document.querySelector("[data-markdown]");
+      }
+    },
+    {
+      src: "plugin/highlight/highlight.js",
+      async: true,
+      condition: function() {
+        return !!document.querySelector("pre code");
+      },
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    },
+    {
+      src: "plugin/zoom-js/zoom.js",
+      async: true
+    },
+    {
+      src: "plugin/notes/notes.js",
+      async: true
+    },
+    {
+      src: "plugin/accessibility-helper/js/accessibility-helper.js",
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }
+  ]
+});
+</script>
+</body>
+</html>

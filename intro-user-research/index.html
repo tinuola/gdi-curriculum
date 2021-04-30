@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GDI Boulder/Denver: UX 201</title>
+
+		<meta name="description" content="An introduction to user research.">
+		<meta name="author" content="Alicia C. Raciti">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="dist/css/reveal.css">
+		<link rel="stylesheet" href="dist/css/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor --><link rel="stylesheet" href="dist/css/gdicool.css">
+		<!-- dark editor <link rel="stylesheet" href="dist/css/dark.css">-->
+		<!-- <link rel="stylesheet" href="dist/css/zenburn.css"> -->
+
+		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="dist/css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+        <script src="dist/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <!-- Opening -->
+				<section>
+					<img src="dist/img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
+					<h2>UX 201: Intro to User Research</h2>
+					<h3>Girl Develop It Boulder/Denver<br/>June 3, 2017</h3>
+					<p>
+						Alicia C. Raciti
+					</p>
+				</section>
+			
+				<section>
+					<h1>Good morning.</h1>
+					<p>Thank you for waking up early on a Saturday to join us!</p>
+				</section>
+			
+				<section>
+					<h1>Ground rules for the day</h1>
+					<ul>
+						<li>Breaks are scheduled, but take breaks when you need to.</li>
+						<li>Participation makes this better.</li>
+						<li>Ask lots of questions, anytime.</li>
+						<li>You're here because you matter.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Today's Agenda</h1>
+					<p>
+						<em>Times subject to change depending on what we need.</em>
+					</p>
+					<ul>
+						<li>9:00-9:30: Introductions, what is UX, what is user research</li>
+						<li>9:30-10:00: Establishing research goals & objectives</li>
+						<li>10:00-10:45: Types of research</li>
+						<li>10:45-11:15: Determining participants & recruiting</li>
+						<li>11:15-11:30: BREAK!
+						<li>11:30-12:30: Conducting research</li>
+						<li>12:30-1:00: Analyzing findings</li>
+						<li>1:00-1:15: Outcomes of research
+						<li>1:15-1:30: Q&A/Parking Lot Review/What's Next</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Things we'll learn today</h1>
+					<ul>
+						<li>What user research and why is it important</li>
+						<li>How to establish research goals & objectives</li>
+						<li>Overview of research types</li>
+						<li>How to determine who you need to talk to</li>
+						<li>How to facilitate a research session</li>
+						<li>What do to with all the research you've gathered</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Introductions</h1>
+					<ul>
+						<li>Your name</li>
+						<li>Why you are taking this class</li>
+						<li>Your friend is coming to town, what is the <b>one</b> restaurant you have to take them to?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>About the instructor</h1>
+					<ul>
+						<li>Alicia C. Raciti</li>
+						<li>Twitter: @acr523</li>
+						<li>Email: a.c.raciti@gmail.com</li>
+						<li>Practicing UX since 2008</li>
+						<li>Transplant to Denver from Philadelphia, PA</li>
+					</ul>
+					<img src="images/alicia_haverfordDoor.jpg">
+				</section>
+			
+				<section>
+					<h1>Quick UX Review</h1>
+				</section>
+				
+				<section>
+					<h2>What is UX?</h2>
+					<p>
+					User experience design is a set of activities and philosophies that ensure users’ needs are understood, addressed, and – ideally – surpassed.
+					<br />
+					</p>
+					<p>
+					UX can encompass many other disciplines, and many other disciplines can encompass UX.
+					</p>
+					<p>
+					- UX101 Paul McAleer
+					</p>
+					<aside class="notes">
+						UX designers seek to make experiences useful & usable. Experiences can be digital or physical, or a combination of the two. ‘User’ is the keyword in user experience. The designer’s goal is to know as much about the user, their motivations, environment, goals, etc. as they can when designing something for them.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>User experience design without user research is <em>not</em><br/>user experience design.</h2>
+					<p>
+					- UX101 Paul McAleer
+					</p>
+				</section>
+				
+				<section>
+					<h2>User interface design is <em>not</em> user experience design.</h2>
+					<p>
+					- UX101 Paul McAleer
+					</p>
+				</section>
+				
+				<section>
+					<p>...so why do the research and everything else that goes with it?</p>
+					<div class="fragment">
+						<h1>You are not your user!</h1>
+						<p>
+						- UX101 Paul McAleer
+						</p>
+					</div>
+					<aside class="notes">
+						User experience advocates for the users. Researchers and designers do not assume that they know what is best for the user. The user knows whats best for them, it's the user researcher and designer that learn about it and then advocate for the user with that knowledge.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>So what is user research?</h2>
+					<p class="fragment">User research focuses on understanding the behaviors, needs, motivations, and emotions of those who will be using or interacting with your product.</p>
+					<aside class="notes">
+						User research focuses on uncovering what our users motivations, environment, and goals are by talking directly with the people your product is going to serve.
+					</aside>
+				</section>
+				
+				<!--<section>
+					<h1>Where in the UX process?</h1>
+					<div>Stakeholder interviews</div>
+					<div class="fragment grow">User Research</div>
+					<div>Content Strategy</div>
+					<div>Information Architecture</div>
+					<div>Interaction Design</div>
+					<div>Visual Design</div>
+					<div>Usability Testing</div>
+				</section>-->
+				
+				<section>
+					<h2>User research is <em>not</em><br/>market research.</h2>
+					
+					<p>
+					The goal of market research is to gather information to identify what markets a product could succeed in.
+					</p>
+					<img src="images/mensPinkShirt.png" class="fragment">	
+					<aside class="notes">
+						Market research focuses on whether or not a product would do well within a specific market. EX: men’s dept. color pink in the south vs. north
+					</aside>				
+				</section>
+
+				<section>
+					<h2>User research is <em>not</em><br>usability testing.</h2>
+					
+					<p>
+					The goal of usability testing is to evaluate the success<br/>of a product with users. 
+					</p>
+					<img src="images/userInterfaceSample.png" class="fragment">
+				</section>
+
+				
+				<section>
+					<p>Why is user research important?</p>
+					<h1 class="fragment">You are not your user.</h1>
+				</section>
+				
+				<section>
+					<h2>What does user research provide?</h2>
+					<ul>
+						<li>Removes assumptions made about users</li>
+						<li>Gives you and your team data for decision making</li>
+						<li>Provides insight into how audiences think about your company or product offering</li>
+						<li>Can help identify new business opportunities</li>
+						<li>Understand user behaviors and how they make decisions</li>
+					</ul>
+				</section>
+				
+				
+				<section>
+					<h2>Today's Challenge</h2>
+					<p>Create and execute a research study for a company that sells <b>jeans.</b></p>
+				</section>
+				
+				
+				
+				
+				
+				<section>
+					<h1>Research goals<br/>& objectives</h1>
+				</section>
+				
+				<section>
+					<h2>Identify your stakeholders</h2>
+					<p>These are people or teams who would have a vested interest in the research you will be conducting.</p>
+				</section>
+				
+				<section>
+					<h2>Understand what your<br/>stakeholders want to know</h2>
+					<p>It's important to know what your stakeholders want to learn and why they feel like research is the way to get answers.</p>
+					<p class="fragment">Conduct stakeholder interviews. Have them send you a list of questions they'd like to find answers to.</p>
+					<div class="fragment">
+						<h3>Example:</h3>
+						<p>
+							<ol>
+							 	<li>Why do our customers like doing business with us?</li>
+								<li>What is their perception of us and do they know our<br/>total core offerings?</li>
+								<li>What could we do better?</li>
+								<li>What product and services to our competitors offer that we don’t but you wished we could?</li>
+								<li>What percentage of your budget do you spend<br/>with our company?</li>
+							</ol>
+						</p>
+					</div>
+					<aside class="notes">
+						This will help you when it comes to picking battles and politics.
+						Stakeholder interviews give you insight into what your stakeholders are looking to better understand and what the goals of the project are.
+						> Topics to cover
+						> Their position and background
+						> Their involvement in the project
+						> Their expectations for the project
+						> What they hope the outcome of the project will help them or their business achieve
+						> Answers to these questions could influence your research with users
+					</aside>
+				</section>
+					
+				<section>
+					<h2>Establishing research goals & objectives</h2>
+					<p>Goals & objectives outline what type information the research activity will be capturing.</p>
+					<div class="fragment">
+						<h3>Example:</h3>
+						<p>
+							 <ul>
+							 	<li>Explore general decision-making process for selecting [industry] services specific to their role.</li>
+								<li>Understand decision-making process for choosing our company.</li>
+								<li>Explore relationship with the company.</li>
+								<li>Explore future business needs</li>
+								<li>Assess competitors</li>
+								<li>Companies considered/used in the past and why.  Benefits, including products and services offered, and issues with each.</li>
+								<li>Explore any current use of competitors and reasons for the use.</li>
+							 </ul>
+						</p>
+					</div>
+				</section>
+				
+				<section>
+					<h3>Note: Stakeholders will be specific<br/>with their needs</h2>
+					<p>It will be up to you, the researcher, to figure out how to broaden their ask.</p>
+				</section>
+				
+				<section>
+					<h2>Workshop #1</h2>
+					<h3>Scenario</h3>
+						<p>Jeannie's Jeans wants to understand why people buy jeans.</p>
+						<p>SH #1: Why do our customers keep buying from us?</p>
+						<p>SH #2: How can we make our jeans better?</p>
+						<p>SH #3: Do people even buy jeans anymore?</p>
+					<div class="fragment">
+						<h3>Activity &mdash; Time: 20 Minutes</h3>
+						<ul>
+							<li>Create goals and objectives for what the study will accomplish.</li>
+						</ul>
+					</div>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Research methods</h1>
+				</section>
+								
+				<section>
+					<h2>There are a number of<br/>research methods</h2>
+					
+					<ul>
+						<li>Stakeholder interviews</li>
+						<li>User interviews</li>
+						<li>Competitive analysis</li>
+						<li>Current state evaluation</li>
+						<li>Ethnographic research</li>
+						<li>Focus groups</li>
+						<li>Analytic analysis</li>
+						<li>+ many more</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Book recommendation</h2>
+					<h3>Universal Methods of Design</h3>
+					<p>Bella Martin & Bruce Hanington</p>
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51PDZXDyT1L.jpg">
+				</section>
+				
+				<section>
+					<h2>Qualitative vs. Quantitative Research</h2>
+					<div class="fragment">
+						<h3>Qualitative</h3>
+							<p>Provides underlying reasons for a problem and is directional in nature. The goal is to create a narrative that can give an idea as to why something is happening.</p>
+					</div>
+					<div class="fragment">
+						<h3>Quantitative</h3>
+							<p>Helps quantify a problem. Statistics coming from quantitive research can demonstrate the size of a problem<br/>that users are experiencing.</p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Attitudinal vs. Behavorial Research</h2>
+					<div class="fragment">
+						<h3>Attitudinal</h3>
+							<p>Captures what people believe their understanding is to be.</p>
+					</div>
+					<div class="fragment">
+						<h3>Behavorial</h3>
+							<p>Captures the actions of what people actually do.</p>
+					</div>
+				</section>
+				
+				<section>
+					<h3>Nielsen Norman Group</h3>
+					<img src="https://s3.amazonaws.com/media.nngroup.com/media/editor/2014/10/10/user-research-methods.png">
+					<p>https://www.nngroup.com/articles/which-ux-research-methods/</p>
+				</section>
+				
+				<section>
+					<h2>Today's focus</h2>
+					<h3 class="fragment">User Interviews</h3>
+					<p class="fragment">User interviews are the easiest way to get research started. They put you directly in touch with who is using your product.</p>
+				</section>
+				
+				<section>
+					<h2>Writing questions</h2>
+					<h3>What users say and do are different.<br/>&mdash; Nielsen Norman Group</h3>
+					<ol>
+						<li class="fragment">Organize questions by topic</li>
+						<li class="fragment">Keep questions open ended</li>
+						<li class="fragment">Be specific if asking a user to recall an event</li>
+						<li class="fragment">Ask about current behavior</li>
+						<li class="fragment">Avoid asking users to predict their behavior</li>
+						<li class="fragment">Avoid leading questions</li>
+					</ol>
+					<aside class="notes">
+						Research on going to church: When asked if they are devout to a religion, answer is yes. Asked when they go to services regularly, answer is yes, even if it is only for high holidays.<br/><!-- http://publicreligion.org/research/2014/05/aapor-2014/
+http://www.washingtonpost.com/blogs/wonkblog/wp/2014/05/19/americans-lie-about-how-much-they-go-to-church-even-if-they-dont-belong-to-one/ -->
+
+						<b>Open ended</b> - if user can answer yes or no to a question, it is not open ended (Have you ever worked with a difficult person? vs. Tell me about a time/situation when you had to work with a difficult person.)<br/>
+						<b>Event recall</b> - Tell me about how you purchase jeans vs. Tell me about the last time you purchased jeans<br/>
+						<b>Leading questions</b> - Would you say Jeannie's Lola cut jeans are your favorite pair? vs. Tell me about your favorite pair of jeans.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Workshop #2</h2>
+					<h3>Activity &mdash; Time: 20-25 minutes</h3>
+						<p><b>Part I:</b> Using the research goals & objectives created in the last workshop, individually write 3-5 questions that you would ask a participant in a user interview.</p>
+						<p class="fragment"><b>Part II:</b> In small groups, share the questions you wrote. Combine questions into a single list of questions.</p>
+					<div>
+						<h3>Keep in mind</h3>
+						<ol>
+							<li>Section questions by topic</li>
+							<li>Keep questions open ended</li>
+							<li>Be specific if asking a user to recall an event</li>
+							<li>Ask about current behavior</li>
+							<li>Avoid asking users to predict their behavior</li>
+							<li>Avoid leading questions</li>
+						</ol>
+					</div>
+					<aside class="notes">
+						Part I: individually write 3-5 questions you would ask a participant in an interview.<br/>
+						Part II: Come together into small groups and consolidate your questions into a single list.
+					</aside>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Determining participants & recruiting</h1>
+				</section>
+
+				<section>
+					<h2>Identifying your participants</h2>
+					<p>Who can provide insight into your product?</p>
+					<div class="fragment">
+						<h3>Ways in which you can narrow the population</h3>
+						<ul>
+							<li>Business line</li>
+							<li>Demographic</li>
+							<li>Roles & Responsibilities</li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Where to find participants?</h2>
+					<ul>
+						<li>Website or email</li>
+						<li>Through your business partners</li>
+						<li>Outsourcing to a recruiting company</li>
+						<ul>
+							<li>Fieldwork offers recruiting services</li>
+						</ul>
+						<li>On the streets</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>How many participants?</h2>
+					<p class="fragment">
+						Well... it depends.
+					</p>
+					<aside class="notes">
+					Interviews should have between 4-12 interviewees, per audience. Spool and Nielsen feel differently about this. Nielsen says about 5 where Spool suggests more. Audience size may determine how many people you interview.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>If you're recruiting online,</h2>
+					<h2 class="fragment">you will need a screener.</h2>
+				</section>
+				
+				<section>
+					<h2>Creating a screener</h2>
+					<p><b>Definition: </b>A screener is a series of questions that help to narrow your participant pool to those you want to talk to during the<br/>actual research study.</p>
+				</section>
+				
+				<section>
+					<h2>Screener format</h2>
+					<h3>1. Introduction</h3>
+					<p>Be clear about the purpose on why you're asking for their time and any incentive you are providing. Provide a clear link<br/>to the screener questions.</p>
+					<img src="images/screenerExpectations.png">
+				</section>
+				
+				<section>
+					<h2>Screener format</h2>
+					<h3>2. Screener questions</h3>
+					<p>Questions asked should help to weed out any potential participants that do not fit the participant profile that you have determined.</p>
+					<p><b>Things to keep in mind</b></p>
+					<ul>
+						<li>Questions should map back to the types of participants<br/>you have identified</li>
+						<li>No more than 10 questions</li>
+						<li><em>Always</em> ask for consent to contact</li>
+						<li>Be cautious about asking for personal information</li>
+						<li>If a question is closed-ended, make sure the list of options provided is exhaustive</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Example: Screener questions</h2>
+					<img src="images/chasePreferredPayment.png">
+				</section>
+				
+				<section>
+					<h2>Example: Too personal of information</h2>
+					<img src="images/chaseTotalNetWorth.png">
+				</section>
+				
+				<section>
+					<h2>Screener format</h2>
+					<h3>3. Screener conclusion</h3>
+					<p>Say thank you and state next steps. The screener is not the interview, so you probably should reiterate that the incentive will be paid out if they are selected to interview.</p>
+				</section>
+				
+				<section>
+					<h2>Workshop #3</h2>
+					<h3>Activity &mdash; Time: 15 minutes</h3>
+						<p><b>Part I:</b> Using the research goals & objectives, in groups determine what type of participants will provide answers to the questions you have.</p>
+						<p class="fragment"><b>Part II:</b> For practice, create 3 screener questions.</p>
+						<aside class="notes">
+							Have students determine what type of participants will help them to get the answers to the questions they have.
+						</aside>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>BREAK!</h1>
+					<p>15 minutes</p>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Conducting research</h1>
+				</section>
+				
+				<section>
+					<h2>Avenues for conducting research</h2>
+					<p>Depends on the type of research being conducted.</p>
+					<ul>
+						<div class="fragment">
+							<li>In-person</li>
+								<ul>
+									<li>Interviews</li>
+									<li>Observations/Field studies</li>
+								</ul>
+						</div>
+						<div class="fragment">
+							<li>Remotely</li>
+								<ul>
+									<li>Interviews</li>
+									<li>Surveys</li>
+									<li>Diary studies</li>
+								</ul>
+						</div>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>In-person research</h2>
+					<p>Either you are going to your participant or they are coming to you.</p>
+				</section>
+				
+				<section>
+					<h2>In-person research</h2>
+					<h3>Benefits</h3>
+					<ul>
+						<li>Observe body language and facial expressions</li>
+						<li>Easier to build rapport with your participant</li>
+						<li>Ability to put a name to a face</li>
+						<li>Gain context for the persons environment</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>In-person research</h2>
+					<h3>Disadvantages</h3>
+					<ul>
+						<li>Can be expensive if you have to travel</li>
+						<li>Time delays due to traveling</li>
+						<li>Higher incentives if the participant is coming to you</li>
+						<li>Risk of no-shows</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>In-person research</h2>
+					<h3>Going out into the field</h3>
+					<p>Safety for you and your participant are number one priority.</p>
+					<ul>
+						<li>Bring a co-worker with you as a note taker or observer</li>
+						<li>Let someone at your office know where you will be</li>
+					</ul>
+					<p class="fragment"><br/>If at any point you feel uncomfortable, it is okay to end the session.</p>
+				</section>
+				
+				<section>
+					<h2>Remote research</h2>
+					<h3>Benefits</h3>
+					<ul>
+						<li>No one has to travel</li>
+						<li>No geographic limitations</li>
+						<li>Lower risk of no-shows</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Remote research</h2>
+					<h3>Disadvantages</h3>
+					<ul>
+						<li>Technical difficulties</li>
+						<li>Participant must have and understand the technology</li>
+						<li>May have challenges building rapport</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Remote research</h2>
+					<h3>Tools</h3>
+					<ul>
+						<li>Google Hangouts</li>
+						<li>WebEx</li>
+						<li>Conference line</li>
+						<li>Simple phone call</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Book recommendation</h2>
+					<h3>Remote Research</h3>
+					<p>Nate Bolt & Tony Tulathimutte</p>
+					<img src="http://rosenfeldmedia.com/wp-content/uploads/2014/11/6-remote-research-640x961.jpg">
+				</section>
+								
+				<section>
+					<h2>Interacting with participants</h2>
+					<ul>
+						<li>Build rapport with your participants, you want them to trust you</li>
+						<li>Keep their stories are at the center of the interview</li>
+						<li>Let your participant lead the conversation</li>
+						<li>Master the awkward pause</li>
+						<li>Do not correct your participants, ask them to clarify</li>
+					</ul>
+					<aside class="notes">
+						Rapport - You’re not going to be friends, but you want the participant to trust you enough to be open with stories and experiences.<br/>
+						Stories - Don’t overshare your own stories. Remember, the interview is about your participant and their story. They are the expert<br/>
+						Silence - People speak in paragraphs. When interviewing, allow time after the participants speaks to carry on their thought. Not everyone thinks out loud or is quick to talk. Americans don't like awkward silence. Read an article on an American moving to Finland, apparently silence isn’t so awkward there. Quiet lunch when joining colleague at the teachers lunch table resulted in no conversation.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Notetaking</h2>
+					<p>Use whatever method you are most comfortable with.</p>
+					<p>Ideally, it will be easy to consolidate notes for when you analyze the interviews.</p>
+					<aside class="notes">
+						It can be in Excel, a note taking app. There's a new tool through Optimal Workshop called Reframer that is specifically for qualitative research.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Structuring an interview</h2>
+					<ol>
+						<div class="fragment">
+							<li>Opening & Introductions</li>
+								<ul>
+									<li>Ask to record the session</li>
+									<li>Signing of any legal paperwork</li>
+									<li>Restate the purpose of the interview</li>
+									<li>Opening questions about the participant</li>
+								</ul>
+						</div>
+						<div class="fragment">
+							<li>Core interview time</li>
+								<ul>
+									<li>Time to ask the questions you created</li>
+									<li>Use your list of questions as a guide, let the participant lead</li>
+								</ul>
+						</div>
+						<div class="fragment">
+							<li>Closing & Next steps</li>
+								<ul>
+									<li>Thank the participant for their time</li>
+									<li>Ask if they have any questions</li>
+									<li>State how they will receive their incentive</li>
+									<li>If necessary, communicate next steps</li>
+								</ul>
+						</div>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Roles & Responsibilities</h2>
+					<ul>
+						<li><b>Participant</b> Tells the story</li>
+						<li><b>Interviewer</b> Asks the questions</li>
+						<li><b>Notetaker</b> Captures the story</li>
+						<li><b>Observer</b> Listens to the story</li>
+					</ul>
+					<p class="fragment"><br/>Be clear that only the interviewer is to ask questions.</p>
+				</section>
+				
+				<section>
+					<h2>Post Research</h2>
+					<p>Debrief as a group after the session.</p>
+					<ul>
+						<li>What was learned?</li>
+						<li>What went well?</li>
+						<li>What could be improved?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Book recommendation</h2>
+					<h3>Interviewing Users</h3>
+					<p>Steve Portigal</p>
+					<img src="http://rosenfeldmedia.com/wp-content/uploads/2014/10/interviewing-users-640x960.jpg">
+				</section>
+				
+				<section>
+					<h2>Workshop #4</h2>
+					<h3>Activity &mdash; Time: 30 Minutes</h3>
+						<p>Using the questions you created in workshop #2 plus additional questions you think of, facilitate a research session.</p>
+						<p>Three 7 minute interviews</p>
+					<h3>In groups</h3>
+						<ul>
+							<li>Assign roles</li>
+								<ul>
+									<li><b>Participant</b> Tells the story</li>
+									<li><b>Interviewer</b> Asks the questions</li>
+									<li><b>Note taker</b> Captures the story</li>
+									<li><b>Observer</b> Listens to the story</li>
+								</ul>
+						</ul>
+				</section>
+				
+				<section>
+					<h2>Workshop #4</h2>
+					<h3>Interview #1 &mdash; Time: 7 minutes</h3>
+						<p>Using the questions you created in workshop #2 plus additional questions you think of, facilitate a research session.</p>
+					<h3>In groups</h3>
+						<ul>
+							<li>Assign roles</li>
+								<ul>
+									<li><b>Participant</b> Tells the story</li>
+									<li><b>Interviewer</b> Asks the questions</li>
+									<li><b>Note taker</b> Captures the story</li>
+									<li><b>Observer</b> Listens to the story</li>
+								</ul>
+						</ul>
+				</section>
+				
+				<section>
+					<h2>Workshop #4</h2>
+					<h3>Interview #2 &mdash; Time: 7 minutes</h3>
+						<p>Using the questions you created in workshop #2 plus additional questions you think of, facilitate a research session.</p>
+					<h3>Rotate roles clockwise</h3>
+					<ul>
+						<li><b>Participant</b> Tells the story</li>
+						<li><b>Interviewer</b> Asks the questions</li>
+						<li><b>Note taker</b> Captures the story</li>
+						<li><b>Observer</b> Listens to the story</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Workshop #4</h2>
+					<h3>Interview #3 &mdash; Time: 7 minutes</h3>
+						<p>Using the questions you created in workshop #2 plus additional questions you think of, facilitate a research session.</p>
+					<h3>Rotate roles clockwise</h3>
+					<ul>
+						<li><b>Participant</b> Tells the story</li>
+						<li><b>Interviewer</b> Asks the questions</li>
+						<li><b>Note taker</b> Captures the story</li>
+						<li><b>Observer</b> Listens to the story</li>
+					</ul>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Analyzing findings</h1>
+				</section>
+				
+				<section>
+					<h2>What to do with all of this data?</h2>
+					<p class="fragment">The goal of this research is to identify trends amongst the stories gathered from participants.</p>
+					<div class="fragment">
+						<h3>Things to look for</h3>
+						<ul>
+							<li>Common words used</li>
+							<li>Similar sentiment regarding a topic</li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Tools you can use</h2>
+					<ul>
+						<li>Excel</li>
+						<li>Google Docs</li>
+						<li>Evernote</li>
+						<li>Post-its and markers</li>
+						<li class="fragment">Reframer(Optimal Workshop)</li>
+					</ul>
+					<img src="images/postitAnalysis.png">
+				</section>
+				
+				<section>
+					<h2>Workshop #5</h2>
+					<h3>Activity &mdash; Time: 20 Minutes</h3>
+						<p>Using the notes that were taken for each interview, organize them by common themes & give the groups a title.</p>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Research Outputs</h1>
+				</section>
+				
+				<section>
+					<h2>What do we do with all of this research?</h2>
+				</section>
+				
+				<section>
+					<h2>Research readout</h2>
+					<p>Typically some type of presentation deck that highlights research findings.</p>
+					<aside class="notes">
+						A research read out will typically consist of the following information:<br/>
+						1. Details about the methodology<br/>
+						2. Details about the participant pool, names removed<br/>
+						3. Key insights or recommendations<br/>
+						4. Participant quotes
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Personas</h2>
+					<p>A documentation tool that humanizes a user by<br/>capturing their goals and needs.</p>
+					<img src="images/Persona1MOD.png">
+				</section>
+				
+				<section>
+					<h2>Book recommendation</h2>
+					<h3>Lean UX</h3>
+					<p>Jeff Gothelf with Josh Seiden</p>
+					<img src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg">
+				</section>
+				
+				<section>
+					<h2>Mental model diagrams</h2>
+					<p>Capture how a user thinks about an experience.</p>
+					<img src="http://boxesandarrows.com/files/banda/where-is-your-mental/indiyoung.mentalmodel.large.png">
+					<p>Credit: Indi Young</p>
+					<aside class="notes">
+						Mental model definition: internal symbol or representation of external reality<br/>
+						Mental models: Use mental models to understand and communicate key understandings about how your users and the business think about a problem.
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Journey maps</h2>
+					<p>Exposes how a client thinks about how they interact with a product or service over time.</p>
+					<img src="https://cdn-images-1.medium.com/max/800/0*0NSLj68cU2tMkloQ.png">
+					<p>Credit: Adaptive Path</p>
+				</section>
+				
+				<section>
+					<h2>Book recommendation</h2>
+					<h3>A Project Guide to UX Design</h3>
+					<p>Russ Unger & Carolyn Chandler</p>
+					<img src="https://images-na.ssl-images-amazon.com/images/I/71voNrL5h9L.jpg">
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				<section>
+					<h1>Additional resources</h1>
+				</section>
+				
+				<section>
+					<h2>Things to read</h2>
+					<ul>
+						<li>Today's book recommendations</li>
+						<li>Nielsen Norman Group: nng.com</li>
+						<li>Smashing Magazine: smashingmagazine.com</li>
+						<li>A List Apart: alistapart.com</li>
+						<li>User Interface Engineering: uie.com</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Places to go</h2>
+					<ul>
+						<li>Denver UXers Slack Team &mdash; denveruxers.com</li>
+						<li>UX Book Club Denver</li>
+						<li>Midwest UX October 2017 &mdash; Cincinnati, OH</li>
+						<li>An Event Apart Conferences &mdash; Various U.S. Cities</li>
+						<li>Information Architecture Summit</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Thank you!</h1>
+					<h3>Alicia C. Raciti</h3>
+					<ul>
+						<li>a.c.raciti@gmail.com</li>
+						<li>Twitter: @acr523</li>
+					</ul>
+				</section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          UX 101 -- Boulder/Denver --
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="dist/js/head.min.js"></script>
+		<script src="dist/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'dist/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

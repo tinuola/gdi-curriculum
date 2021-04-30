@@ -1,0 +1,45 @@
+{
+  "name": "gdi-intro-to-devops",
+  "version": "2.6.2",
+  "description": "Girl Develop It class on Introduction to DevOps",
+  "homepage": "http://girldevelopit.github.io/gdi-slides-template",
+  "scripts": {
+    "test": "grunt test",
+    "start": "grunt",
+    "publish": "git push origin HEAD:gh-pages"
+  },
+  "author": {
+    "name": "Kevin Gao"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sudowork/gdi-intro-to-devops.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mustache": "^4.0.1",
+    "socket.io": "^2.3.0",
+    "underscore": "~1.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "cssnano": "^4.1.10",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-zip": "~0.7.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
+    }
+  ]
+}
