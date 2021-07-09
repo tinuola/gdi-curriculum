@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<title>GDI Demo Slides Template</title>
+		
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/gdilight.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+	
+		<div class="reveal">
+      <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<img src="assets/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+				</section>
+
+				<section>
+					Girl Develop It's Framework for HTML Presentations, based on Reveal.js.
+				</section>
+
+        <!-- Compatibility -->
+        <section>
+					<h2>Heads Up</h2>
+					<p>
+						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+						support for CSS 3D transforms to see it in its full glory.</p>
+            <br>
+						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
+					</p>
+				</section>
+				
+        <!-- Examples of basic html based slides -->
+				<section>
+					<h2>Marvelous Unordered List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+        <!-- Slides with Code  -->
+        <section>
+          <h2>Slides with Code: HTML</h2>
+          <p>For HTM, wrap your code with the "code" tag with a class of "xml", then wrap in a "pre" tag.</p><br>
+          <pre class="left-align">
+            <code class="xml hljs">
+              <p>Hello World.</p>
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Slides with Code: JavaScript</h2>
+          <p>For JavaScript, use the class "javascript".</p><br>
+          <pre>
+            <code class="javascript">
+              function helloWorld(){
+              var name = 'GDI';
+              alert("Hi, " + name)
+              } 
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Slides with Code: Python</h2>
+          <p>For Python, use the class "python".</p><br>
+          <pre>
+            <code class="python">
+  def hello_world():
+  name = "GDI"
+  print 'Hi, ' + name
+  return
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Editable Slides with Code</h2>
+          <p>We can also make code editable. Use the "contenteditable" attribute in the "code" tag. Try editing the code!</p><br>
+          <pre>
+            <code contenteditable class="javascript">
+              function helloWorld(){
+                var name = 'GDI';
+                alert("Hi, " + name)
+              } 
+            </code>
+          </pre>
+        </section>
+
+        <!-- Speaker View -->
+        <section>
+          <h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+					<p>P.S. This won't work when running the slides locally unless you run reveal.js from a local web server (<a href="https://github.com/girldevelopit/gdi-slides-template/wiki#compiling-slides-and-running-locally" target="_blank">learn how</a>).</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+        </section>
+      
+      </div> <!-- End of Slides container -->
+	
+  		<footer>
+        <!-- Update with Course Name -->
+        <div class="copyright">
+          Girl Develop It -- Course Name
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+
+		</div> <!-- End of Reveal wrapper -->
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
