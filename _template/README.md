@@ -4,6 +4,7 @@ This README file should contain course details, outline, guidelines, tips etc fo
 
 <hr>
 
+_(Course slides are hosted at: link)_
 ## Course Description
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
