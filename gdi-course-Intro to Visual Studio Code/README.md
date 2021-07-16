@@ -7,29 +7,35 @@ This README file should contain course details, outline, guidelines, tips etc fo
 _(Course slides are hosted at: link)_
 ## Course Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A beginners guide to getting started with Visual Studio Code. Giving an overview of the code editor and sharing tips and tricks to get acquainted. 
 
 ## Course Objectives
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Give students an overview of Visual Studio Code.
 
 ## Course Outline
 
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
+* Intros/Course Overview
+* Visual Studio Code Download
+* Overview of layout 
+* Settings
+* Plugins/Marketplace
+* Emmet
+* Troubleshooting
 
-## Suggested Exercises
+<!-- ## Suggested Exercises
 
 * Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
+* Lorem ipsum dolor sit amet -->
 
 ## Resources
 
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
+*  [Download Visual Studio Code](#https://code.visualstudio.com/download)
+* [Top Ten Extensions for Beginners](#https://blog.devgenius.io/10-basic-vs-code-visual-studio-code-extensions-for-beginners-5f2b2aac7c3f)
+* [Installation Guide from Visual Studio Code](#https://code.visualstudio.com/learn/get-started/basics)
+* [Visual Studio Code Marketplace/Live Server](#https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 
 ## FAQs-Notes-Tips
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+* When in doubt google it 
