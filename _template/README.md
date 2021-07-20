@@ -14,15 +14,21 @@ GDI's HTML slides are powered by [Reveal.js](https://revealjs.com/), the popular
 
 ## How to Use This Template
 
-Create a copy of the `gdi-course-template` folder.
-
-Update the copied folder to the new course name.
+Create a copy of the `gdi-course-template` folder and add the copy to a designated topic directory.
+  * For example, if creating a new Python course, the copied template folder would be added to the [`python` directory](https://github.com/girldevelopit/gdi-curriculum/tree/main/python).
+  * Not sure of where to save a new course? Please ask GDI's Training Director, a member of GDI's Operations team, or your Subject Matter Expert.
 
 Create course content in `class.html`:
   * Update course name in the `<title>` tag.
   * Update course name in the `<footer>` tag.
-  * If the course is a multi-class series, create and number additional `class.html` files:
+  * If the course is a cohort or multi-class series, create and number additional `class.html` files:
     * For example: `class1.html`, `class2.html`, etc.
+
+Additional Notes for Cohort or Multi-series classes:
+  * For cohorts and multi-class series, it may be helpful to create an `index.html` file that serves as a cover page that links to all classes in the series.
+    * For example: ...
+  * After the first class in a cohort, subsequent classes don't really require or need all of the introductory GDI slides: (Mission Statement, Code of Conduct, Promos, Intros, etc). The GDI logo, current class title and agenda, a set of `review` slides (if appropriate) and the course content should suffice.
+
 
 If incorporating images/media, add them to the `assets/imgs` folder.
   * Include credit /attribution to image(s) when possible.
