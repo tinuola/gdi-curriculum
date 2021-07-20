@@ -2,7 +2,9 @@
 
 *Work in Progress...*
 
-This template is for creating open-source slide content for **Girl Develop It** courses. 
+This template is for creating open-source HTML slide content for **Girl Develop It** courses.
+
+GDI's HTML slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For ease of use and simplicity, the framework's files are consumed via a CDN.
 
 - [How to Use this Template](#how-to-use-this-template)
 - [Template Content](#template-content)
@@ -16,29 +18,32 @@ Update the `gdi-course-template` folder to the new course name.
 
 Create course content in `class.html`:
   * Update course name in the `<title>` tag.
+  * Update course name in the `<footer>` tag.
   * If the course is a multi-class series, create and number additional `class.html` files.
   * For example: `class1.html`, `class2.html`
 
 If incorporating images/media, add them to the `assets/imgs` folder.
+  * Add photo credit to image(s) if available.
 
 Update the `README.md` file.
 
 Update the `Marketing.md` file.
 
 ## Template Content
-* Reveal.js scaffolding:
-  * `css, dist, examples, js, plugin, test, gulpfile`
-  * These are default folders and files that power the template slides, and also contain GDI configurations.
-  * Edits to the scaffold should be done at the template level via a pull request. Do not edit the scaffold as you create a course.
 
-* `assets` folder
-  * Contains GDI logos and stock images used in the template / starter slides.
-  * Images for courses should be stored `imgs` folder.
+* `assets` folder contains
+  * `css` folder with GDI theme customization for reveal.js
+  * `fonts` folder for GDI theme fonts
+  * `imgs` folder that contains:
+    * GDI logos and stock images used in the template / starter slides.
+    * Images for courses should be stored `imgs` folder.
 
-* Demo files
-  * *(work in progress)* `demo-gdi-slides` This is meant to show the various ways to use reveal's features for GDI content as well as outline GDI style guidelines. It's currently still in progress; so for now the `demo-revealjs-slides` file is a better example of what reveal.js can do.
+* `demo-gdi-slides.html`
+  * *(Work in progress)* This is meant to show the various ways to use reveal.js's features for GDI content, as well as to outline GDI style guidelines. Copy code/section snippets from this file as needed.
 
-* READMEs
+  * Note: The demo slides contain the most common use cases of reveal.js for GDI content. Interested in more ways to use the framework's robust features? Visit the [reveal.js website](https://revealjs.com/) to view a full demo.
+
+* README files
   * README.md: Should contain course information that guides instructors on how to teach the couse 'out of the box'.
 
   * Marketing.md: Should contain course detail/copy that the GDI Operations team uses to promote the course. 
