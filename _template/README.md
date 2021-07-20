@@ -14,7 +14,8 @@ This template is for creating open-source slide content for **Girl Develop It** 
 
 Update the `gdi-course-template` folder to the new course name.
 
-Create course content in `class.html`.
+Create course content in `class.html`:
+  * Update course name in the `<title>` tag.
   * If the course is a multi-class series, create and number additional `class.html` files.
   * For example: `class1.html`, `class2.html`
 
