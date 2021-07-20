@@ -1,12 +1,17 @@
-# GDI Course Template
+# GDI Course and Slides Template
 
 *Work in Progress...*
 
-This template is for creating open-source HTML slide content for **Girl Develop It** courses.
+**Girl Develop It** uses a customized HTML slide template for its open-source course content and slides.
 
-GDI's HTML slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
+Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN in our slides.
+
+Each time you create a new course, clone a fresh copy of the `gdi-course-template` folder. All the CSS and JavaScript needed are included; you only need to edit the `class.html` file to build content. This README contains additional instructions for setting up a course.
+
+To contribute to and update current course content, please see the wiki. _(Coming soon)_
 
 - [How to Use this Template](#how-to-use-this-template)
+  + [Course Creation Tips](#course-creation-tips)
 - [Template Content](#template-content)
 - [Example Course Folder](#example-course-folder)
 
@@ -36,6 +41,18 @@ If incorporating images/media, add them to the `assets/imgs` folder.
 Update the `README.md` file.
 
 Update the `Marketing.md` file.
+
+
+### Course Creation Tips
+
+We recommend using unstacked slides (rather than nested slides) for better readability.
+
+Limit the amount of content added to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
+
+Prefer visual explanations to text where possible.
+
+Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
+
 
 ## Template Content
 
@@ -89,6 +106,7 @@ Update the `Marketing.md` file.
     * GDI Upcoming Courses promo *(Blank)*
     * Instructor Contact *(Blank)*
     * Thank You
+
 
 ## Example Course Folder
 
