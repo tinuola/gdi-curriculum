@@ -30,7 +30,7 @@
       img.c60 {border-width:0}
       ul.c59 {list-style-type: none; font-size: 30px}
       div.c58 {max-width: 500px; margin: 30px}
-      span.c57 {color:violet:}
+      span.c57 {color:violet}
       p.c56 {background-color: OrangeRed; font-size: 30px}
       span.c55 {color: OrangeRed}
       span.c54 {background-color: OrangeRed; color:white}
@@ -1408,7 +1408,7 @@ GROUP BY first_name, last_name, hire_date;</code></pre>
           <p class="old">
             What is this query bring back?
           </p>
-          <pre><code contenteditable="" class="sql">SELECT first_name, last_name,hire_date,a.emp_no, salary, from_date as
+          <pre><code contenteditable="" class="sql">SELECT first_name, last_name, hire_date, a.emp_no, salary, from_date AS
 salary_start_date, to_date AS salary_end_date
 FROM employees.employees a
 JOIN employees.salaries b ON a.emp_no = b.emp_no
@@ -1649,7 +1649,7 @@ GROUP BY title</code></pre>
             Data Types
           </h3>
           <p class="old">
-            Data usually comes in two types: numbers and charactes
+            Data usually comes in two types: numbers and characters
           </p>
           <ul class="old">
             <li class="c49">Numbers</li>
@@ -1863,8 +1863,8 @@ GROUP BY title</code></pre>
             Now let's do some quick analysis
           </h3>
           <pre><code contenteditable="" class="sql">SELECT * FROM vicki.moviesample;
-                  SELECT first_name FROM vicki.moviesample;
-                  SELECT COUNT(*) FROM vicki.moviesample;</code></pre>
+SELECT first_name FROM vicki.moviesample;
+SELECT COUNT(*) FROM vicki.moviesample;</code></pre>
           <p class="old">
             What do we get?
           </p>
@@ -1970,7 +1970,7 @@ ORDER BY COUNT(DISTINCT first_name) DESC;</code></pre>
           </h3>
           <pre><code contenteditable="" class="sql">SELECT * FROM vicki.moviesample a
 JOIN vicki.movie_year b
-ON a.movie_title=b. movie_title</code></pre>
+ON a.movie_title=b.movie_title</code></pre>
           <ul class="old">
             <li class="old">What happens when you have two fields with the same name in your select statement?
             </li>
