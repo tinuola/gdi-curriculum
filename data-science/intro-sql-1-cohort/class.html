@@ -1392,13 +1392,13 @@ LEFT JOIN titles c ON a.emp_no = c.emp_no;</code></pre>
           <p class="c45">
             What is this query telling us?
           </p>
-          <pre><code contenteditable="" class="sql">SELECT first_name, last_name,a.emp_no, hire_date, 
+          <pre><code contenteditable="" class="sql">SELECT first_name, last_name, hire_date, 
 COUNT(DISTINCT title) , COUNT(DISTINCT salary)
 FROM employees.employees a
 JOIN employees.salaries b ON a.emp_no = b.emp_no
 JOIN employees.titles c ON a.emp_no = c.emp_no
 where first_name like 'A%'
-GROUP BY first_name, last_name, hire_date,a.emp_no;</code></pre>
+GROUP BY first_name, last_name, hire_date;</code></pre>
           <img src="assets/imgs/all-in-table.png" alt="All in table" width="40%">
         </section>
         <section>
