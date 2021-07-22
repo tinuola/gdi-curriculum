@@ -1,13 +1,15 @@
 # Course Information
 
-This README file should contain course details, outline, guidelines, tips etc for instructors--essentially what instructors will need to run the course "out of the box".
-
 <hr>
 
 _(Course slides are hosted at: link)_
 ## Course Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The command line is a powerful yet often avoided tool for beginning developers.
+
+We're here to show you that it's easier than you might think, and even fun! This course will cover basics of directory and file traversal, finding and searching for files and content, and using many of the powerful tools  that come along with most Unix Shells. It will be taught by {{ teacher_name }}, {{ teacher_description }}.
+
+After this workshop, the next time you encounter a terminal prompt, you'll be ready to respond with confidence.
 
 ## Course Objectives
 
