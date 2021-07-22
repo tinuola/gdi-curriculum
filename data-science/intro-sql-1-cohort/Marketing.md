@@ -6,7 +6,7 @@ This file should contain marketing information about the course, and is primaril
 
 ## Course Title
 
-Lorem ipsum dolor sit amet
+Intro to SQL
 
 ## Course description
 
