@@ -2,7 +2,7 @@
 
 <hr>
 
-_(Course slides are hosted at: link)_
+_(Course slides are hosted at: https://www.teaching-materials.org/cli/)_
 ## Course Description
 
 The command line is a powerful yet often avoided tool for beginning developers.
