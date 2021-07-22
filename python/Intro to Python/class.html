@@ -9,7 +9,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<!-- Update with GDI Course Name -->
-		<title>GDI HTML Slides Template</title>
+		<title>Intro to Python</title>
 
 		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
 
@@ -74,7 +74,9 @@
 
 				<!-- Course Title -->
 				<section>
-					<h2>Course Title</h2>
+					<img src="assets/imgs/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<h2>Intro to Python</h2>
+					<h3>Section 1</h3>
 				</section>
 
 				<!-- Instructor Intro -->
@@ -83,45 +85,446 @@
 					<p>Name, title, company, bio, etc</p>
 				</section>
 
-				<!-- OPTIONAL: TAs Intro -->
-				<section>
-					<p>(Optional Slide for TAs; remove if not using)</p>
-					<h2>TA Intro(s)</h2>
-					<p>Names, titles</p>
-				</section>
-
-				<!-- Student Intros / IceBreaker -->
-				<section>
-					<h2>Student Intros or<br> Ice Breaker</h2>
-				</section>
-
 				<!-- HouseKeeping -->
 				<section>
-					<h2>Housekeeping</h2>
+					<h2>Welcome</h2>
+					<p>
+						Girl develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Some Rules</h2>
 					<ul>
-						<li>Display your preferred name and pronoun.</li>
-						<li>We are here for you!</li>
-						<li>Every question is important.</li>
+						<li>We are here for you</li>
+						<li>Every question is important</li>
+						<li>Help each other</li>
 						<li>Participate, Experiment, Have Fun!</li>
 					</ul>
 				</section>
 
 				<!-- Course Agenda/Topics/Course Outline -->
 				<section>
-					<h2>Course Outline or Topics</h2>
+					<h2>Course Outline</h2>
+					<ul>
+						<li>Why Python?</li>
+						<li>What is Programming?</li>
+						<li>Variables and Arithmetic</li>
+						<li>Statements and Error Messages</li>
+						<li>Development Environment Setup</li>
+					</ul>
 				</section>
 			
-				<!-- Course Goals -->
-				<section>
-					<h2>Course Goals</h2>
-				</section>
-
-				<!-- Course Slides -->
+						<!-- Course Slides -->
 				<!-- Create as many new sections as needed -->
 
 				<!-- Slide Name -->
 				<section>
-					<h2>Course Content...</h2>
+					<h2>Why Python?</h2>
+					<ul>
+						<li>Suitable for beginners, yet used by professionals</li>
+						<li>Readable, maintainable code</li>
+						<li>Rapid rate of development</li>
+						<li>Few "magical" side-effects</li>
+						<li>Variety of applications.</li>
+						</ul>
+                        <p style="text-align:right">Block 1 begins: 25 Minutes</p>
+				</section>
+
+				<section>
+					<h2>What is Python used for?</h2>
+					<ul>
+						<li>System Administration (Fabric, Salt, Ansible)</li>
+						<li>3D animation and image editing (Maya, Blender, Gimp)</li>
+						<li>Scientific Computing (numpy, scipy</li>
+						<li>Web Development (Django, Flask)</li>
+						<li>Game Development (Civilization 4, EVE Online)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Who is using Python?</h2>
+					<ul>
+						<li>Disney</li>
+						<li>Dropbox</li>
+						<li>Canonical and Red Hat</li>
+						<li>Google</li>
+						<li>NASA Note: Caktus uses Python</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is Programming?</h2>
+					<ul>
+						<li>Teaching the computer to do a task</li>
+						<li>A program is made of one or more files of code, each of which solve part of the overall task</li>
+						<li>Programming code is human readable but also needs a form that the computer can run directly. This form is not human readable</li>
+						<li>To create the form of code the computer can use, we use the Python <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">interpreter</a>. Other languages use other interpreters or a <a href="https://en.wikipedia.org/wiki/Compiler" target="_blank">compiler</a>.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is Programming?</h2>
+					<p style="text-align: left;">
+						Don't focus on what's "under the hood" for now. We will "drive the car" first.<br />
+						In other words, there are many layers in an onion. We will start at one layer and slowly move toward layers that are beneath or above us.
+					</p>
+				</section>
+
+				<section>
+					<h2>Command line, Python Shell and Text Editors</h2>
+					<table style="width:auto; font-size: xx-large;">
+						<tr>
+							<th><b>Program</b></th>
+							<th><b>Description</b></th>
+						</tr>
+						<tr>
+							<td>Terminal</td>
+							<td>A program that has a command line interface and issues commands to an operating system</td>
+						</tr>
+						<tr>
+							<td>Python Shell</td>
+							<td>A command line program that runs inside the terminal, takes, interprets and prints result of a Python code</td>
+						</tr>
+						<tr>
+							<td>Text Editor</td>
+							<td>A program that opens text files and allows users to edit and save them</td>
+						</tr>
+					</table>	
+				</section>
+
+				<section>
+					<h2>Examples of Text Editors</h2>
+					<table style="width:100%; font-size: xx-large;">
+						<tr>
+							<th><b>Platform</b></th>
+							<th><b>Examples</b></th>
+						</tr>
+						<tr>
+							<td>Linux</td>
+							<td>Gedit, Jedit, Kate</td>
+						</tr>
+						<tr>
+							<td>MacOSX</td>
+							<td>TextMate, TextWrangler</td>
+						</tr>
+						<tr>
+							<td>Windows</td>
+							<td>Notepad++</td>
+						</tr>
+						<tr>
+							<td>All</td>
+							<td>Sublime Text, Vim, Emacs</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Let's set up our computer for Python Programming</h2>
+					<ul>
+						<li>Let's install a text editor- <a href="https://www.sublimetext.com/download" target="_blank">Install Sublime Text 4</a></li>
+						<li><a href="https://www.python.org/downloads/" target="_blank">Install Python</a> - (This step is for Windows users only. GNU/Linux and MacOSX come with Python Installed)</li> 
+						<li>(Windows only): After installing Python, open the "powershell" program and type:<br />[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Let's set up our computer for Python Programming</h2>
+					<ul>
+						<li>Locate and run the terminal program. Type 'python' and hit enter.</li>
+						<li>More setup instructions are available: <a href="https://learnpythonthehardway.org/book/ex0.html" target="_blank">here</a>.</li>
+						<li>(You can, but don't have to install the other text editors recommended in this guide)</li>
+						<p>Note: 15 Minutes</p>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Working in the Python Shell</h2>
+					<p style="text-align: left;">Open up your terminal and type 'python'</p>
+					<ul>
+						<li>Follow along with the examples in the slides. Type them in!</li>
+						<li>Feel free to explore as well. You will not accidentally break things</li>
+						<li>$ means you are in the terminal (not python). >>> means you are in python</li>
+						<li>Type exit() to leave python and return to the terminal</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Variables and Arithmetic</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> 3 + 4<br />
+						7<br />
+						<span style="color:blue">>>></span> 2 * 4<br />
+						8<br />
+						<span style="color:blue">>>></span> 6 - 2<br />
+						4<br />
+						<span style="color:blue">>>></span> 4 / 2 <br />
+						2<br />
+					</p>
+				</section>
+
+				<section>
+					<h2>Variables and Arithmetic -  continued...</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> a = 2<br /> <span style="color:red">print</span> a<br />
+						2<br />
+						<span style="color:blue">>>></span> b = 3<br />
+						<span style="color:blue">>>></span> c = a + b<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> c<br />
+						5<br />
+					</p>
+				</section>
+
+				<section>
+					<h2>Variables and Arithmetic -  continued...</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> a = 0<br />
+						<span style="color:blue">>>></span> a = a + .5<br />
+						<span style="color:blue">>>></span><span style="color:red">print</span> a<br />
+						0.5<br />
+					</p>
+				</section>
+
+				<section>
+					<h2>Strings</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> a = 'Hello'<br />
+						<span style="color:blue">>>></span> b = 'World'<br />
+						<span style="color:blue">>>></span> c = a + b<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> c<br/ >
+						'Hello World'	
+					</p>
+				</section>
+				
+				<section>
+					<h2>Strings -  continued...</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> a = "Spam"<br />
+						<span style="color:blue">>>></span> b = a * 4<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> b<br/ >
+						"Spam Spam Spam Spam"	
+					</p>
+				</section>
+
+				<section>
+					<h2>Data Types</h2>
+					<ul>
+						<li>Variables are names of objects</li>
+						<li>Among other things, variables are used to represent something that can't be known until the program is run</li>
+						<li>Objects always have a "type"</li>
+						</ul>
+				</section>	
+
+				<section>
+					<h2>Data Types - continued...</h2>
+					<ul>
+						<li>The type of an object helps define what it can do</li>
+						<li>The type can be found using: type()</li>
+						<li>type() is a function. We call it by using parenthesis and pass it an object by placing the object inside the parenthesis</li>
+						</ul>
+				</section>
+				
+				<section>
+					<h2>Data Types - continued...</h2>
+					<p style="text-align: left;"> Examples:<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> <span style="color:blueviolet">type</span>(4)<br />
+						type 'int'<br />
+						<span style="color:blue">>>></span> a = 4<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> <span style="color:blueviolet">type</span>(a)<br />
+						type 'str'<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> <span style="color:blueviolet">type</span>("But I don't like spam")<br />
+						type 'str'<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> <span style="color:blueviolet">type</span>(3.5)<br />
+						type 'float'<br />
+					</p>
+				</section>
+
+				<section>
+					<h2>Data Types - continued...</h2>
+					<ul>
+						<li>Objects can be used with set of operators</li>
+						<li>An int or float can be used with any of: +, -, *, /</li>
+						<li>A string can be used with any of: +, *</li>
+						<li>What happens if we try to use division or subtraction with a string?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Data Types - continued...</h2>
+					<p style="text-align: left;">
+						<span style="color:blue">>>></span> <span style="color:red">print</span> <span style="color:blueviolet">type</span>"Spam"/"Eggs"<br />
+						<span style="color:chocolate">Traceback</span> (most recent call last):<br />
+						<span style="color:chocolate">File</span> "&lt;stdin&gt;", line <span style="color:blue">1</span>, in &lt;module&gt;<br />
+						<span style="color:chocolate">TypeError</span>: unsupported operand <span style="color:blueviolet">type</span>(s) <span style="color:red">for </span> /: 'str' <span style="color:blue">and</span> 'str'<br />
+						</p>
+				</section>
+
+				<section>
+					<h2>Errors</h2>
+					<ul>
+						<li>There are different kinds of errors that can occur. We have seen a few of these so far</li>
+						<li>A runtime error results in an Exception. An Exception gives us some information about the nature of error and how to correect it</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Errors - continued...</h2>
+					<ul>
+						<li>One type of exception is SyntaxError. This results when ourt code can not be evaluated because it is incorrect at syntactic level. In other words, we are not following the rules of the language</li>
+						<li>Some other examples are TimeError and NameError Exceptions</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Errors - continued...</h2>
+					<ul>
+						<li>A # is a code comment. These are not evaluated by Python</li>
+                        <span style="color:grey"># This statement is not meaningful to the computer</span><br />
+					</ul>
+					<p style="text-align: left;">
+						<span style="color:grey">
+						# SyntaxError - Doesn't conform to the rules of Python.<br />
+						</span>
+						<span style="color:blue">>>></span> 4spam)eggs(garbage) <span style="color:blue">+</span> 10<br /><br />
+						</p>
+				</section>
+						
+				<section>
+					<h2>Errors - continued...</h2>
+					<p style="text-align: left;"> 	
+						<span style="color:grey">
+							# NameError - Using a name that hasn't been defined yet.<br />
+						</span>
+						<span style="color:blue">>>></span> a = 5<br />
+						<span style="color:blue">>>></span> <span style="color:red">print</span> b<br />
+					</p>
+					<p style="text-align: left;">
+					<span style="color:grey">
+							# TypeError - Using an object in a way that its type does not support.<br />
+						</span>
+						<span style="color:blue">>>></span> 'string 1'/ 'string 2'<br />
+						</p>
+				</section>
+
+				<section>
+					<h2>Let's Develop It</h2>
+					<ul>
+						<li>We'll practise what we've learned in this shell</li>
+						<li>Review the slides on your computer and practice entering any commands you didn't fully understand before</li>
+						<li>Ask the teacher or a TA for any help</li>
+					<p style="text-align: right;">
+					Let's Develop It: 30 Minutes
+					</p>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Using the Terminal, try these commands in turn: </h2>
+					<table style="width: 100%; font-size:x-large;">
+						<tr>
+							<th><b>Command</b></th>
+							<th><b>Short for</b></th>
+							<th><b>Description</b></th>
+						</tr>
+						<tr>
+							<td>pwd</td>
+							<td>Print working directory</td>
+							<td>Displays what folder you are in</td>
+						</tr>
+						<tr>
+							<td>ls</td>
+							<td>List</td>
+							<td>Displays the files and folders in the current folder</td>
+						</tr>	
+						<tr>
+							<td>cd</td>
+							<td>Change Directory</td>
+							<td>Change to another folder, where is the target</td>
+						</tr>
+						<tr>
+							<td>cat</td>
+							<td>Concatenate k</td>
+							<td>Prints the contents of the file</td>
+						</tr>	
+						<tr>
+							<td>file</td>
+							<td>File</td>
+							<td>Displays the type of the file</td>
+						</tr>
+					</table>
+					<p style="text-align: right;">
+					Note: Block 3 beings, 30 minutes<br />
+					</p>
+				</section>
+
+				<section>
+					<h2>Creating a folder</h2>
+					<p style="text-align: left; font-size: x-large;">
+						We need a folder to save and run our code from.<br />
+						($ shows the shell prompt where commands are entered. Lines without $ are output)<br /><br/>
+						$ <span style="color:blue">cd</span><br />
+						$ <span style="color:blue"> pwd</span><br />
+						/home/username ( or /User/username/ or similar)<br />
+						$ mkdir gdipython<br />
+						$ <span style="color:blue">cd </span>gdipython<br />
+						$ <span style="color:blue">pwd</span>
+						/home/username/gdipython<br /><br />
+						Now that folders are made, we only have to use this in the future:<br /><br />
+						$ <span style="color:blue">cd</span> ~/gdipython
+					</p>
+				</section>
+
+				<section>
+					<h2>The Text Editor Open Sublime text</h2>
+					<ul style="font-size: xx-large;">
+						<li>Click File, then Open folder. Navigate to the gdipython folder we created an click "open"</li>
+						<li>In the text editor, enter the following:</li>
+						<span style="color:red">print</span> 'This is a python program'
+						<li>Click file, save as. type 'program.py' and click Ok.</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>The Text Editor Open Sublime text.</h2>
+					<p style="text-align: left; font-size: xx-large;">
+						Open a terminal and type:<br/>
+						$ <span style="color:blue">cd </span><br />
+						$ <span style="color:blue">cd </span>gdipython<br />
+						$ python program.py<br /><br />
+						You should see the terminal print:<br />
+						This is a python program<br />
+					</p>
+				</section>
+				
+				<section>
+					<h2>User Input</h2>
+					
+					<ul style="text-align: left;">
+						<li>Obtain user input, use 'raw_input()'</li>
+						<li>We use float() to make it a number</li>
+						<li>Change the program.py text to the following and run it again.</li>
+					</ul>
+					<p style="text-align: left;">
+					input_value = <span style="color: blueviolet;">raw_input</span>("Enter a radius:")<br />
+					radius = <span style="color: blueviolet;">float</span>(input_value)<br />
+					area = <span style="color: blue;">3.14519 * </span>radius <span style="color: blue">* </span>radius<br />
+					<span style="color: red;">print </span>"The area of a circle with radius", input_value, "is", area
+					</p>
+				</section>
+
+				<section>
+					<h2>Let's Develop It</h2>
+					<p style="text-align: left;">
+						Write your own program that uses raw_input and does something else with the value.<br /><br >
+						You can use float() or int() to treat the input as a number if you need a number, or you can use the input directly if you need a string.<br />
+						</p>
+					<p style="text-align: right;">
+					Note: Let's Develop It: 15 Minutes
+					</p>
+				</section>
+
+				<section>
+					<h2>Questions?</h2>
 				</section>
 
 				<!-- Hands-on Work -->
