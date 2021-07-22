@@ -378,16 +378,16 @@
             <ul class="c12">
               <li class="old">
                 <span class="c11">SELECT</span> user_name, SUM(total_purchases)
-              </li>
+              </li><br>
               <li class="old">
                 <span class="c11">FROM</span> billing_database.user_table
-              </li>
+              </li><br>
               <li class="old">
                 <span class="c11">WHERE</span> user_name LIKE 'Henderson%'
-              </li>
+              </li><br>
               <li class="old">
                 <span class="c11">AND</span> billing_month = 'January'
-              </li>
+              </li><br>
               <li class="old">
                 <span class="c11">GROUP BY</span> user_name;
               </li>
@@ -945,10 +945,9 @@ SELECT * FROM employees.salaries; </code></pre>
           <h4>
             Counting titles and salaries
           </h4>
-          <p class="old">What is this telling us? How many instances of that title are there in the table?<\p>
+          <p class="old">What is this telling us? How many instances of that title are there in the table?</p>
           <pre><code contenteditable="" class="sql">SELECT title, COUNT(*) FROM employees.titles
 GROUP by title;</code></pre>
-          <br>
           <img src="assets/imgs/titles-and-salaries.png" alt="Select Columns">
         </section>
         <section>
@@ -1258,7 +1257,7 @@ WHERE title LIKE '%Engineer%';</code></pre>
           <p class="old">
             Find out salary history:
           </p>
-          <pre><code contenteditable="" class="sql">SELECT first_name, last_name, hire_date,salary, from_date, to_date
+          <pre><code contenteditable="" class="sql">SELECT first_name, last_name, hire_date, salary, from_date, to_date
 FROM employees.employees a
 JOIN employees.salaries b ON a.emp_no = b.emp_no</code></pre>
           <style type="text/css">
