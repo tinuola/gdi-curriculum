@@ -318,6 +318,211 @@
 					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
 				</section>
 
+				<!-- Components -->
+				<section>
+					<h2>Components in React</h2>
+					<h3>What is React Composed of?</h3>
+					<br>
+					<h4>Components</h4>
+					<p>-Building blocks of the UI</p>
+					<br>
+					<p>-Small, independent, and reusable</p>
+					<br>
+					<p>-Contain rendering instructions for the virtual DOM (usually written in JSX)</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Exercise - design twitter -->
+				<section>
+					<h2>Exercise: How would you design Twitter?</h2>
+					<p>If you were to build Twitter in React, what would it look like? Can you name the components you’d choose?</p>
+					<br>
+					<img src="assets/stock-img/TwitterScreenshot.png" alt="TwitterScreenshot" width="700px" class="noborder"/>
+				</section>
+
+				<!-- Exercise - design twitter 2 -->
+				<section>
+					<h2>Exercise: How would you design Twitter?</h2>
+					<img src="assets/stock-img/TwitterComponents.png" alt="TwitterComponents" width="700px" class="noborder"/>
+				</section>
+
+				<!-- Thinking in React 1 -->
+				<section>
+					<h2>Thinking in React</h2>
+					<p>When planning your application, it’s helpful to draw out your app and determine its components.</p>
+					<br>
+					<img src="assets/stock-img/CatstagramComponents.png" alt="CatstagramComponents" width="700px" class="noborder"/>
+				</section>
+
+				<!-- Thinking in React 2 -->
+				<section>
+					<h2>Think:</h2>
+					<p>Reusable components</p>
+					<br>
+					<p>Nested components</p>
+					<br>
+					<p>One-way data flow (in the form of 'props' from the parent to the child… more on this later!)</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Rendering Components -->
+				<section>
+					<h2>What is React Composed of?: Components</h2>
+					<p>In the case of React 16, specifically Functional Components</p>
+					<br>
+					<br>
+					<h4>Rendering components:</h4>
+					<p>Must attach it to the DOM using ReactDOM.render()</p>
+					<br>
+					<p>Can also render a component within another component!</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Functional Components 1 -->
+				<section>
+					<h2>Functional Component</h2>
+					<img src="assets/stock-img/FunctionalExample1.png" alt="FunctionalExample1" width="700px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Functional Components 2 -->
+				<section>
+					<img src="assets/stock-img/FunctionalBreakdown.png" alt="FunctionalBreakdown" width="900px" class="noborder"/>
+				</section>
+
+				<!-- Component Composition -->
+				<section>
+					<h2>Component Composition</h2>
+					<p>Composition of components refers to nesting components inside one another</p>
+					<br>
+					<p>Nest default HTML elements like the Greeting div (shown below),  and/or your own React components</p>
+					<img src="assets/stock-img/CompositionNesting.png" alt="CompositionNesting" width="700px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- JSX 1 -->
+				<section>
+					<h2>What is React Composed of?: JSX</h2>
+					<h4>What is JSX?</h4>
+					<p>Syntax extension of Javascript</p>
+					<br>
+					<p>Looks a lot like a template language, like HTML</p>
+					<br>
+					<p>Describes what we want the UI to look like</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- JSX 2 -->
+				<section>
+					<h2>What is React Composed of?: JSX</h2>
+					<h4>How does JSX work?</h4>
+					<p>Creates React “elements” we can render to the DOM alongside HTML</p>
+					<br>
+					<p>Combines markup (HTML) and logic (JS) into one element: a component</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- JSX 3 -->
+				<section>
+					<h2>JSX = HTML(ish) + JS</h2>
+					<p>Logic can be contained within {} </p>
+					<br>
+					<p>‣ this can be any valid JS expression (i.e. one-liner)</p>
+					<img src="assets/stock-img/JSXExample.png" alt="JSXExample" width="700px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- JSX 4 -->
+				<section>
+					<h3>JSX = HTML(ish) + JS - Zoom In 🔍</h3>
+					<h5>JSX can be any valid JS expression (i.e. one-liner).  IE:</h5>
+					<p>Variables:</p>
+					<img src="assets/stock-img/JSXVariableExample.png" alt="JSXVariableExample" width="700px" class="noborder"/>
+					<br>
+					<p>Function calls:</p>
+					<img src="assets/stock-img/JSXFunctionExample.png" alt="JSXFunctionExample" width="700px" class="noborder"/>
+					<br>
+					<p>Terneray:</p>
+					<img src="assets/stock-img/JSXTernaryExample.png" alt="JSXTernaryExample" width="700px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Rendering 1 -->
+				<section>
+					<h3>Rendering</h3>
+					<h5>Components are rendered on the DOM using</h5>
+					<img src="assets/stock-img/RenderingExample.png" alt="RenderingExample" width="700px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Rendering 2 -->
+				<section>
+					<h3>ReactDOM.render() </h3>
+					<h5>ReactDOM.render() takes in two arguments:</h5>
+					<p>1) The base React component to be rendered (the entry point to the app)</p>
+					<br>
+					<p>2) Where the component will be rendered (the HTML element)</p>
+					<img src="assets/stock-img/RenderExample2.png" alt="RenderExample2" width="500px" class="noborder"/>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Pair Programming -->
+				<section>
+					<h3>Pair Programming</h3>
+					<p>Pair programming provides a relationship structure for when 2 people are working on one piece of code.</p>
+					<br>
+					<p>🚘 Driver: Person typing at the keyboard.  Focused on completing the task at hand, ignoring larger issues.</p>
+					<br>
+					<p>🗺️ Navigator: Person observing/giving direction.  Reviews the code, gives directions, shares thoughts, and thinks about the larger issues.</p>
+					<br>
+					<p>↔️ With each exercise, switch people!</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Exercise: Componentize It - Part 1 -->
+				<section>
+					<h3>Exercise: Componentize It - Part 1</h3>
+					<p>We will be working in CodeSandBox.io and building off of this sandbox in particular. Make sure to fork the sandbox before typing!</p>
+					<br>
+					<p>Create an App component and render it into the DOM.</p>
+					<br>
+					<p>Hint: If you get stuck, there are solutions located in files to the left.</p>
+					<br>
+					<h4><a href="https://codesandbox.io/s/gdicomponentizeit-xe5sz?file=/src/index.js">https://codesandbox.io/s/gdicomponentizeit-xe5sz?file=/src/index.js</a></h4>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Exercise: Componentize It - Part 2 -->
+				<section>
+					<h3>Exercise: Componentize It - Part 2</h3>
+					<p>Your goal is to write two components in addition to App and include them inside of App.  The two components can be sibling components or nested inside of each other.  And they can be declared on the same page as App.js</p>
+					<br>
+					<p>The components can be and do whatever you’d like!</p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
+				<!-- Exercise: Componentize It - Bonus -->
+				<section>
+					<h3>Exercise: Componentize It - Bonus</h3>
+					<p>Write some JSX into your component!  Can be either a function or a variable or a ternary. </p>
+					<br>
+					<img src="assets/stock-img/1280px-React-icon.svg.png" alt="React Logo" width="100px" class="noborder" align="right"/>
+				</section>
+
 				<!-- Hands-on Work -->
 				<section>
 					<h2>Let's Develop It!</h2>
