@@ -4,14 +4,15 @@
 
 **Girl Develop It** uses a customized HTML slide template for its open-source course content and slides.
 
-Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN in our slides.
+Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN in the slides.
 
-Each time you create a new course, clone a fresh copy of the `gdi-course-template` folder. All the CSS and JavaScript needed are included; you only need to edit the `class.html` file to build content. This README contains additional instructions for setting up a course.
+Creating a new course is easy! Simply create a duplicate or copy of the `gdi-course-template` folder. All the CSS and JavaScript needed are included; you only need to edit the `class.html` file to build content. This README contains additional instructions for building a course.
 
-To contribute to and update current course content, please see the wiki. _(Coming soon)_
+To contribute to or update current course content, please see the `Contributing Guidelines` page in this repo's Wiki. _(Coming soon)_
 
 - [How to Use this Template](#how-to-use-this-template)
   + [Course Creation Tips](#course-creation-tips)
+  + [Using RevealJS](#using-revealjs)
 - [Template Content](#template-content)
 - [Example Course Folder](#example-course-folder)
 
@@ -22,6 +23,8 @@ To contribute to and update current course content, please see the wiki. _(Comin
 Create a copy of the `gdi-course-template` folder and add the copy to a designated topic directory.
   * For example, if creating a new Python course, the copied template folder would be added to the [`python` directory](https://github.com/girldevelopit/gdi-curriculum/tree/main/python).
   * Not sure of where to save a new course? Please ask GDI's Training Director, a member of GDI's Operations team, or your Subject Matter Expert.
+
+Review the `demo-gdi-slides.html` file/slides for how to use Reveal.js and to copy/model code snippets as needed.
 
 Create course content in `class.html`:
   * Update course name in the `<title>` tag.
@@ -34,14 +37,12 @@ Additional Notes for Cohort or Multi-series classes:
     * For example: ...
   * After the first class in a cohort, subsequent classes don't really require or need all of the introductory GDI slides: (Mission Statement, Code of Conduct, Promos, Intros, etc). The GDI logo, current class title and agenda, a set of `review` slides (if appropriate) and the course content should suffice.
 
-
 If incorporating images/media, add them to the `assets/imgs` folder.
   * Include credit /attribution to image(s) when possible.
 
 Update the `README.md` file.
 
 Update the `Marketing.md` file.
-
 
 ### Course Creation Tips
 
@@ -53,6 +54,9 @@ Prefer visual explanations to text where possible.
 
 Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
 
+### Using Reveal.js
+
+See the [Using Reveal.js](https://github.com/girldevelopit/gdi-curriculum/wiki/Using-Reveal.js) page in this repo's Wiki.
 
 ## Template Content
 
