@@ -7,6 +7,5 @@ A two-hour free introduction to HTML & CSS.
 ### FrontEnd Fundamentals 1 Cohort
 A six-class, 12-hour beginner series.
 
-
 ### FrontEnd Fundamentals 2 Cohort
-A six-class, 12-hour intermediate series.
+A six-class, 12-hour intermediate series. 
