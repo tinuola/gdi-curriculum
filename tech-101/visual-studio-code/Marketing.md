@@ -6,22 +6,28 @@ This file should contain marketing information about the course, and is primaril
 
 ## Course Title
 
-Lorem ipsum dolor sit amet
+A Beginner’s Guide to Visual Studio Code
 
 ## Main / Long Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+What is an IDE? Where do I write code? How do I debug? This course is a beginner’s guide to Visual Studio Code, the popular text editor used by developers industry-wide.
+
+In this 2-hour workshop, we will go on a tour of VS Code. Topics covered will include an installation overview; getting to know the various aspects of the editor's interface; learning about customization tools and powerful plugins that help developers stay productive; and exploring tips and strategies to set you up for success as you start your coding journey.
 
 ## Summary Description (Optional)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+What is an IDE? Where do I write code? How do I debug? This course is a beginner’s guide to Visual Studio Code, the popular text editor used by developers industry-wide.
 
 ## Course Prerequisite
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+For beginners. No prior knowledge of code editors needed.
 
 ## Technical Requirements
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
-* Lorem ipsum dolor sit amet
+* Laptop / Desktop
+* Internet access
+* Visual Studio Code installation 
+  * ( Free download: https://code.visualstudio.com/download )
+
+
+
+ 
