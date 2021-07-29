@@ -44,6 +44,8 @@ Update the `README.md` file.
 
 Update the `Marketing.md` file.
 
+**Do not delete** the `demo-gdi-slides.html` file. It is meant to serve as a reference for using reveal.js and as a style guide.
+
 ### Course Creation Tips
 
 We recommend using unstacked slides (rather than nested slides) for better readability.
@@ -68,7 +70,7 @@ See the [Using Reveal.js](https://github.com/girldevelopit/gdi-curriculum/wiki/U
     * Images for courses should be stored `imgs` folder.
 
 * `demo-gdi-slides.html`
-  * *(Work in progress)* This is meant to showcase ways to use reveal.js's features for GDI content, as well as to outline GDI style guidelines. Copy code/section snippets from this file as needed.
+  * *(Work in progress)* This is meant to showcase ways to use reveal.js's features for GDI content, as well as to outline GDI style guidelines. Copy code/section snippets from this file as needed. Do not delete this file.
 
   * Note: The demo slides contain common use cases of reveal.js for GDI content. Interested in more ways to use the framework's robust features? Visit the [reveal.js website](https://revealjs.com/) for a full demo.
 

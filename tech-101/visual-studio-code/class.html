@@ -9,15 +9,20 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<!-- Update with GDI Course Name -->
-		<title>GDI Intro to Visual Studio Code </title>
+		<title>GDI - A Beginner's Guide to Visual Studio Code </title>
 
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/gdilight.css">
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="assets/css/gdi-theme.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
 	</head>
 
 	<body>
@@ -27,14 +32,14 @@
 				
 				<!-- Opening Slide -->
 				<section>
-					<img src="assets/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="400px" class="noborder"/>
-					<br><br>
+					<img src="assets/imgs/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
 					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
 				</section>
 				
 				<!-- GDI Mission Statement -->
 				<section>
-					<img src="assets/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
 					<br>
 					<h3>We create welcoming, supportive and accessible environments for women and non-binary adults to learn software development.</h3>
 				</section>
@@ -42,8 +47,8 @@
 				<!-- GDI Code of Conduct -->
 				<section>
 					<h3>We are dedicated to providing a welcoming and comfortable environment for all to learn coding and every attendee is expected to uphold our <span style="font-weight: bolder;">Code of Conduct</span>:</h3>
-					<h4><a href="https://girldevelopit.com/code-of-conduct/">girldevelopit.com/codeofconduct/</a></h4>
-					<h4><a href="bit.ly/gdi-incident-report">bit.ly/gdi-incident-report</a></h4>
+					<h4><a href="https://girldevelopit.com/code-of-conduct/" target="_blank">girldevelopit.com/codeofconduct/</a></h4>
+					<h4><a href="bit.ly/gdi-incident-report" target="_blank">bit.ly/gdi-incident-report</a></h4>
 				</section>
 
 				<!-- GDI Promo - Part 1-->
@@ -62,10 +67,21 @@
 
 				<!-- GDI Promo - Part 2 -->
 				<section>
-					<img src="assets/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder"/>
 					<br><br>
 					<h3>Find All Our Classes & Events:</h3>
 					<h2><a href="https://girldevelopit.com/">www.girldevelopit.com</a></h2>
+				</section>
+
+				<!-- HouseKeeping -->
+				<section>
+					<h2>Housekeeping</h2>
+					<ul>
+						<li>Display your preferred name and pronoun.</li>
+						<li>We are here for you!</li>
+						<li>Every question is important.</li>
+						<li>Participate, Experiment, Have Fun!</li>
+					</ul>
 				</section>
 
 				<!-- Course Title -->
@@ -75,62 +91,34 @@
 
 				<!-- Instructor Intro -->
 				<section>
-					<h2>Lauren Libretti </h2>
-					<p>Lauren Libretti is a theater professional turned full-stack developer. Lauren comes to the tech space after working as an educator, designer, and project manager in the theater world. She attended a full stack bootcamp and is excited to join the GDI community to help empower newcomers on their learning journey.</p>
+					<h2>Instructor Intro</h2>
+					<p>Name, title, company, bio, etc</p>
 				</section>
 
 				<!-- OPTIONAL: TAs Intro -->
-				<!-- <section>
-					<p>(Optional Slide for TAs)</p>
+				<section>
+					<p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs; comment out if not using)</p>
 					<h2>TA Intro(s)</h2>
 					<p>Names, titles</p>
-				</section> -->
-
-				<!-- Student Intros / Ice Breaker -->
-				<section>
-					<h2>Student Intros</h2>
-					<ul style="list-style: none;">
-					<li>Your name</li>
-					<br />
-					<li>Something you recently learned in tech that you loved</li>
-					<br />
-					<li>Something you recently learned that was challenging</li>
-					<br />
-					<li>What learning path are you interested in?</li>
-					</ul>
 				</section>
 
-				<!-- HouseKeeping -->
+				<!-- Student Intros / IceBreaker -->
 				<section>
-					<h2>Housekeeping</h2><br>
-					<ul style="list-style: none;">
-						<li>Display your preferred name and pronoun.</li><br>
-						<li>We are here for you!</li><br>
-						<li>Every question is important.</li><br>
-						<li>Participate, Experiment, Have Fun!</li><br>
-					</ul>
+					<h2>Student Intros or<br> Ice Breaker</h2>
 				</section>
 
 				<!-- Course Agenda/Topics/Course Outline -->
 				<section>
 					<h2>Course Outline</h2>
-					<ul style="list-style: none;">
+					<ul>
 					<li>What is a code editor for?</li>
-					<br />
 					<li>Visual Studio Code Download</li>
-					<br />
 					<li>Overview of layout</li>
-					<br />
 					<li>Settings</li>
-					<br />
 					<li>What is emmet?</li>
-					<br />
 					<li>Linters</li>
-					<br />
 					<li>Plugins plugins plugins...</li>
-					<br />
 					<li>Troubleshooting/Debugging</li>
-					
 				</ul>
 				</section>
 			
@@ -146,29 +134,36 @@
 				<!-- What editor do I choose? -->
 				<section>
 					<h2>What code editor do I choose?</h2>
-					<h3>Why visual studio code?</h3>
-					<br><br>
+				</section>
+
+				<section>
+					<h3>What code editor do I choose?</h3>
 					<p>Picking a code editor is like choosing between a android or apple- once you pick one it's hard to switch back</p>
-					<br/>
-					<br/>
-					<h4> Alternatives to Visual Studio Code</h6>
-						<ul style="list-style: none;">
-					<li>Atom</li>
-					<li>Webstrom</li>
-					<ul>Sublime</li>
+				</section>
+
+				<section>
+					<h3> Alternatives to VS Code</h3>
+					<ul style="list-style: none;">
+						<li>Atom</li>
+						<li>Webstrom</li>
+						<li>Sublime</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Why use an editor? Why should I choose visual studio code?</h2>
-					<br/>
-					<h3>We need a place to write our code in a way that readable for human eyes. A code editor will help us do that.</h3>
-					<p>Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git</p>
+					<h3>Why use an editor?</h3>
+					<p>We need a place to write our code in a way that readable for human eyes. A code editor will help us do that.</p>
+					
 				</section>
+
 				<section>
-					<h1>Visual Studio Code vs Visual Studio</h1>
-					<br/>
-					<p>Visual Studio is NOT the same. Visual Studio is an Integrated Development Environment-meaning it you can write and test your code at the same time. It's a great tool but it runs slow. </p>
+					<h3>Why should I choose VS Code?</h3>
+					<p>Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.</p>
+				</section>
+				
+				<section>
+					<h3>Visual Studio Code vs Visual Studio</h3>
+					<p>Visual Studio is NOT the same. Visual Studio is an Integrated Development Environment (IDE)--meaning you can write and test your code at the same time. It's a great tool but it runs slow. </p>
 				</section>
 
 				<!-- Download Visual Studio Code-->
@@ -176,7 +171,6 @@
 					<h2>Download Visual Studio Code</h2>
 					<a href="http://https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>
 				</section>
-
 
 				<!-- Overview of layout-->
 				<section>
@@ -308,30 +302,47 @@
 				</section>
 			</div> <!-- End of Slides container -->
 		
-  		<footer>
+			<footer>
+				<!-- Update with Course Name -->
         <div class="copyright">
-					<!-- Update with Course Name -->
-          Girl Develop It -- Course Name
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>A Beginner's Guide to Visual Studio Code</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
         </div>
       </footer>
-
 		</div> <!-- End of Reveal wrapper -->
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
 			Reveal.initialize({
 				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
 			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
 		</script>
 	</body>
 </html>
