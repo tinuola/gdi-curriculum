@@ -4,7 +4,7 @@
 
 Want to learn how to build your own website? Already have a site, but someone else manages it and you want to have more control over it? Interested in learning to program but want to start small? If you answered “yes” to any of the questions above, this course is for you!
 
-HTML and CSS are incredibly useful skills for bloggers, content creators, email marketers, small business owners, designers to have; they are necessary tools for front-end web developers.
+HTML and CSS are incredibly useful skills for bloggers, content creators, email marketers, small business owners, designers to have; they are necessary tools for aspiring front-end or web developers.
 
 This beginner course will introduce you to the basics of HTML and CSS, the languages used by billions of web pages today. Through a mix of lecture and hands-on exercises, you will learn to build and style your own basic web page!
 
