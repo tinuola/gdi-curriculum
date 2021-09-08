@@ -110,7 +110,7 @@
           <h3>Welcome!</h3>
           <div class = "left-align">
           <p>Tell us about yourself:</p>
-          <ul>
+          <ul style="line-height: 1.75;">
             <li>Name?</li>
             <li>Location?</li>
           </ul>
@@ -121,7 +121,7 @@
           <h3>Welcome!</h3>
           <div class = "left-align">
           <p>Rate your experience with HTML & CSS:</p>
-          <ol>
+          <ol style="font-size: 30px; line-height: 1.75;">
             <li>- Absolute beginner</li>
             <li>- Minimal experience (a few tutorials)</li>
             <li>- Some experience (familiar with the basics)</li>
@@ -131,16 +131,12 @@
 
         <section>
           <h3>Welcome!</h3>
-          <div class = "left-align">
-            <p>What do you hope to get out of this class?</p>
-          </div>
+          <p>What do you hope to get out of this class?</p>
         </section>
 
         <section>
           <h3>Welcome!</h3>
-          <div class = "left-align">
-            <p>Current favorite or binge TV show?</p>
-          </div>
+          <p>Current favorite or binge TV show?</p>
         </section>
 
 				<!-- Course Agenda/Topics/Course Outline -->
@@ -154,9 +150,13 @@
 				<!-- Course Goals -->
 				<section>
 					<h2>Course Goals</h2>
-					<p>Build a simple site using HTML and CSS.</p>
-          <p>Work with images, lists, links and basic styling.</p>
-          <p>Get resources, information about next steps.</p>
+          <div class = "left-align">
+            <ul style="line-height: 1.75;">
+              <li>Build a simple site using HTML and CSS.</li>
+              <li>Work with images, lists, links and basic styling.</li>
+              <li>Get resources, information about next steps.</li>
+            </ul>
+          </div>
 				</section>
 
 				<!-- Course Slides -->
@@ -181,7 +181,7 @@
 
 				<section>
 					<h3>A Very, Very Quick History of HTML</h3>
-					<ul>
+					<ul style="font-size: .8em; line-height: 1.75;">
 						<li>Invented by Tim Berners-Lee</li>
 						<li>Created "hypertext" to share scientific papers</li>
 						<li>First web page built: August 6, 1991</li>
@@ -215,9 +215,9 @@
 
 				<section>
 					<h3>Anatomy of a website</h3>
-					<ul>
-            <li>A paragraph is your <strong>content</strong>.</li><br>
-            <li>Putting your content into an HTML tag to make it look like a paragraph is <strong>structure</strong>.
+					<ul style="line-height: 1.75;">
+            <li>A paragraph is your <code>content</code>.</li>
+            <li>Putting your content into an HTML tag to make it look like a paragraph is <code>structure</code>.
 <pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
 </code></pre>
             </li>
@@ -227,8 +227,8 @@
         <section>
           <h3>Anatomy of a website</h3>
 					<ul>
-            <li>Making the font of your paragraph green and smaller is  <strong>presentation</strong>
-					  <p style="font-size:24px; color:green;">This paragraph has been styled with CSS.</p>
+            <li>Making the font of your paragraph green and smaller is  <code>presentation</code>.
+					  <p style="font-size:30px; color:green;">This paragraph has been styled with CSS.</p>
 					  </li>
 					</ul>
 				</section>    
@@ -236,44 +236,44 @@
 				<!-- TOOLS -->
 				<section>
 					<h3>Basic Tools</h3>
-          <ul style="list-style: none; text-align: center;">
-            <strong>Browsers: </strong>
-            <li style="font-size:.75em; margin-top: .35em;">Chrome</li>
-            <li style="font-size:.75em;">FireFox</li>
-            <li style="font-size:.75em;">Safari</li>
+          <p>Browsers:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Chrome</li>
+            <li>FireFox</li>
+            <li>Safari</li>
           </ul>
         </section>
 
         <section>
 					<h3>Basic Tools</h3>
-          <ul style="list-style: none; text-align: center;">
-            <strong>Code or Text Editors: </strong>
-            <li style="font-size:.75em; margin-top: .35em;">Visual Studio Code</li>
-            <li style="font-size:.75em;">Atom</li>
-            <li style="font-size:.75em;">Sublime Text</li>
+          <p>Code or Text Editors:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Visual Studio Code</li>
+            <li>Atom</li>
+            <li>Sublime Text</li>
           </ul>
         </section>
 
         <section>
 					<h3>Basic Tools</h3>
-          <ul style="list-style: none; text-align: center;">
-            <strong>Online Code Editors: </strong>
-            <li style="font-size:.75em; margin-top: .35em;">REPL.it</li>
-            <li style="font-size:.75em;">Codepen.io</li>
-            <li style="font-size:.75em;">Codesandbox.io</li>
+          <p>Online Code Editors:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>REPL.it</li>
+            <li>Codepen.io</li>
+            <li>Codesandbox.io</li>
           </ul>
         </section>
 
-				<!-- Hands-on Work -->
+				<!-- PRACTICE -->
 				<section>
 					<h2>Let's Develop It!</h2>
 				</section>
 
 				<!-- ONLINE EDITOR SETUP - WALKTHROUGH -->
 				<section>
-					<h3>Get Started: REPL.it</h3><br>
-					<ul>
-            <li>Create a free account on REPL.it.</li> <br>
+					<h3>Get Started: REPL.it</h3>
+					<ul style="font-size: .8em; line-height: 1.75;">
+            <li>Create a free account on REPL.it.</li>
             <li>Or an online editor of your choice.</li>
 					</ul>
 				</section>
@@ -286,30 +286,24 @@
 				<!-- HTML ELEMENTS -->
 				<section>
 					<h3>Anatomy of an HTML element</h3>
-					<p class="left-align">HTML pages are made up of elements.</p>
-					<ul>
-            <li><strong>Element</strong>
-              <ul>
-                <li>An individual component of HTML.</li>
-                <li>Paragraph, heading, table, list, div, link, image, etc.</li>
-              </ul>
-            </li>
-					</ul><br>
-          <pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
+					<p>HTML pages are made up of elements.</p>
+          <p>Element</p>
+					<ul style="font-size: .8em; line-height: 1.75;">
+            <li>An individual component of HTML.</li>
+            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
+					</ul>
+<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
 				</section>
 
         <section>
 					<h3>Anatomy of an HTML element</h3>
-					<ul>
-            <li><strong>Tag</strong>
-              <ul>
-                <li>Marks the beginning &amp; end of an element.</li>
-                <li>Tags contain characters that indicate the tag's purpose.</li>
-              </ul>
-            </li>
-					</ul><br>
-          <pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
-          <pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
+					<p>Tag</p>
+            <ul style="font-size: .8em; line-height: 1.75;">
+              <li>Marks the beginning &amp; end of an element.</li>
+              <li>Tags contain characters that indicate the tag's purpose.</li>
+            </ul>
+<pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
+<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
 				</section>
 
 				<!-- HTML TAGS -->
@@ -323,9 +317,9 @@
         <!-- HTML DOCTYPE -->
         <section>
           <h3>Doctype</h3>
-          <p>The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-          <pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
-          <p><small>* The doctype is case-insensitive. <br/><br>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+          <p style="font-size: .8em;">The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
+<pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
+          <p><small>* The doctype is case-insensitive. <br><br>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
         </section>
 
         <!-- HTML TAG -->
@@ -386,8 +380,8 @@
         <!-- NESTING -->
         <section>
           <h3>Nesting &amp; Indentation</h3>
-          <p class="left-align">Elements "nest" inside the tag that contains them.</p>
-          <p class="left-align">What elements are nested here?</p>
+          <p style="font-size:.8em;">Elements "nest" inside the tag that contains them.</p>
+          <p style="font-size:.8em;">What elements are nested here?</p>
 <pre><code class="html">&lt;html&gt;
  &lt;head&gt;
   &lt;title&gt;Title of the page&lt;/title&gt;
@@ -397,7 +391,7 @@
  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-          <p style="font-size:30px;">Notice: Whichever element opens first, closes last.</p>
+          <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
         </section>
 
         <!-- ELEMENTS: HEADINGS -->
@@ -434,9 +428,9 @@
         <section >
           <h3>Let's Develop It!</h3>
           <p class="left-align">A basic page about your favorite television show.</p>
-          <ol>
-            <li>Include an h1 header</li><br>
-            <li>Add additional headings for potential sections of your page</li><br>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Include an h1 header.</li>
+            <li>Add additional headings for potential sections of your page.</li>
           </ol>
           <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
         </section>
@@ -489,12 +483,12 @@ and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
   
         <!--PRACTICE - PARAGRAPH-->
         <section >
-          <h3>Let's develop it!</h3>
+          <h3>Let's Develop It!</h3>
           <p>Add on to the page for your favorite television show.</p>
-          <ol>
-            <li>Text! You can either copy and paste from a Wikipedia article, or generate text from an Ipsum like <a href="https://hipsum.co/">Hipster Ipsum</a>.</li><br>
-            <li>Add paragraph tags to break up your text into at least 2 paragraphs.</li><br>
-            <li>Add formatting tags to emphasize "important" words.</li><br>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Text! You can either copy and paste from a Wikipedia article, or generate text from an Ipsum like <a href="https://hipsum.co/">Hipster Ipsum</a>.</li>
+            <li>Add paragraph tags to break up your text into at least 2 paragraphs.</li>
+            <li>Add formatting tags to emphasize "important" words.</li>
           </ol>
         </section>
   
@@ -579,11 +573,11 @@ us &lt;br/&gt;Above us only sky
 
         <!-- PRACTICE - ADD A LIST -->
         <section >
-          <h3>Let's Develop It!</h3><br>
-          <ol>
-            <li>Add an unordered list of characters from your favorite show to your code.</li><br>
-            <li>Add an ordered list of seasons or episodes to your code.</li><br>
-            <li>EXTRA CHALLENGE:<br>
+          <h3>Let's Develop It!</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Add an unordered list of characters from your favorite show to your code.</li>
+            <li>Add an ordered list of seasons or episodes to your code.</li>
+            <li>EXTRA CHALLENGE:
             <ul>
               <li>Nest an ordered list in an unordered list</li>
             </ul>
@@ -594,11 +588,11 @@ us &lt;br/&gt;Above us only sky
         <!-- ATTRIBUTES -->
         <section>
           <h3>Element Details: Attributes</h3>
-          <ul>
-            <li>Attributes describe additional characteristics of an HTML element</li><br>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Attributes describe additional characteristics of an HTML element</li>
             <li>An attribute has 2 parts: Name &amp; Value.</li>
           </ul>
-          <br><br>
+          <br>
 <pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
           <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
         </section>
@@ -607,11 +601,11 @@ us &lt;br/&gt;Above us only sky
         <section>
           <h3>Images</h3>
           <p>To make an image, you need 3 parts:</p>
-          <ul>
-            <li>An image tag: <code>&lt;img /&gt;</code></li><br>
-            <li>A <code>src</code> attribute: the location and name of the image file</li><br>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>An image tag: <code>&lt;img /&gt;</code></li>
+            <li>A <code>src</code> attribute: the location and name of the image file</li>
             <li>An <code>alt</code> attribute: a brief description of the image content</li>
-          </ul><br>
+          </ul>
         </section>
 
         <section>
@@ -642,12 +636,12 @@ alt=""/&gt;
         <!-- PRACTICE - ADD AN IMAGE -->
         <section >
           <h3>Let's Develop It!</h3>
-          <ol>
-            <li>Using the img tag, add an image of your TV show to your page.<br><br>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Using the img tag, add an image of your TV show to your page.
               <ul>
                 <li>Tip: Do an online search; copy an image link from the web.</li>
               </ul>
-            </li><br>
+            </li>
             <li>Include an ALT attribute in the img tag.</li>
           </ol>
         </section>
@@ -656,9 +650,9 @@ alt=""/&gt;
         <section>
           <h3>Links</h3>
           <p>To make a link, you need 3 parts:</p>
-          <ul style="font-size: 30px;">
-            <li>An anchor tag: <code>&lt;a&gt;&lt;/a&gt;</code></li><br>
-            <li>An <code>href</code> attribute: the web address to where the link points</li><br>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>An anchor tag: <code>&lt;a&gt;&lt;/a&gt;</code></li>
+            <li>An <code>href</code> attribute: the web address to where the link points</li>
             <li><strong>content</strong>: text or images between the tags that become the clickable link.</li>
           </ul>
 <pre><code class="html" style="min-width: 44em;">&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
@@ -688,14 +682,14 @@ alt=""/&gt;
         <!--COMMENTS 1-->
         <section>
           <h3>Comments</h3>
-          <p>You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
+          <p style="font-size: .8em;">You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
 <pre><code class="html">&lt;!-- Comment goes here --&gt;
 </code></pre>
         </section>
 
         <section>
         <h3>Comments</h3>
-        <p style="font-size: 30px">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
+        <p style="font-size: .8em">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
 <pre><code class="html">&lt;!-- Beginning of header --&gt;
 &lt;div id="header"&gt;Header Content&lt;/div&gt;
 &lt;!-- End of header --&gt;
@@ -711,7 +705,7 @@ alt=""/&gt;
 
         <!-- BREAK -->
         <section>
-          <h1>Break - 10 Minutes</h1>
+          <h2>Break - 10 Minutes</h2>
         </section>
 
         <!-- CSS -->
@@ -771,7 +765,7 @@ alt=""/&gt;
           <h3>Connecting CSS to HTML: Inline</h3><br>
 <pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
 </code></pre>
-          <ul>
+          <ul style="font-size: .85em; line-height: 1.75;">
             <li>Uses the HTML <code>style</code> attribute.</li>
             <li>Only applies to one element at a time.</li>
             <li>Not preferred.</li>
@@ -790,7 +784,7 @@ alt=""/&gt;
   &lt;/style&gt;
 &lt;/head&gt;
 </code></pre>
-          <ul>
+          <ul style="font-size: .85em; line-height: 1.75;">
             <li>Inside <code>&lt;head&gt;</code> element.</li>
             <li>Uses <code>&lt;style&gt;</code> tag.</li>
             <li>Only applies to that page.</li>
@@ -804,7 +798,7 @@ alt=""/&gt;
   &lt;link rel="stylesheet" href="style.css"&gt;
 &lt;/head&gt;
 </code></pre><br>
-          <ul>
+          <ul style="font-size: .85em; line-height: 1.75;">
             <li>Can be referenced from multiple pages.</li>
             <li>Reduced file size &amp; bandwidth.</li>
             <li>Easier to maintain in larger projects.</li>
@@ -814,10 +808,10 @@ alt=""/&gt;
 
         <!-- PRACTICE-->
         <section>
-          <h3>Let's Develop It</h3>
+          <h3>Let's Develop It!</h3>
           <p>Embedded CSS:</p>
-          <ol style="font-size: 30px">
-            <li>In the <code>head</code> tag of your index.html file, beneath the title tag, add an opening and closing <code>style</code> tag.</li><br>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>In the <code>head</code> tag of your index.html file, beneath the title tag, add an opening and closing <code>style</code> tag.</li>
             <li>Add / nest the CSS rule below in the <code>style</code> tag:</li>
           
 <pre><code class = "css">body {
@@ -857,7 +851,7 @@ property: value;
         <!-- CSS PROPERTIES -->
         <section>
           <h3>CSS Properties</h3>
-          <ul>
+          <ul style="font-size: .8em; line-height: 1.75;">
             <li>200? 300? 500?</li>
             <li>You're not expected to know them all!</li>
             <li>Focus on the commonly used ones</li>
@@ -917,7 +911,7 @@ property: value;
         <section>
           <h3>Let's Develop It!</h3>
           <p>Colors!</p>
-          <ol>
+          <ol style="font-size: .8em; line-height: 1.75;">
             <li>Change the background color of your site. Use a color name, hexcode or RGB value</li>
             <li>Change the font color of one or all of your heading.</li>
         </section>
@@ -937,10 +931,10 @@ property: value;
         <section>
           <h3>Font-size units:</h3>
           <ul>
-          <li>Pixels - "px"</li>
-          <li>"rem" or "em" </li>
-          <li>Percentage - %</li>
-          <li>xx-small, medium, large, x-large, etc</li>
+            <li>Pixels - "px"</li>
+            <li>"rem" or "em" </li>
+            <li>Percentage - %</li>
+            <li>xx-small, medium, large, x-large, etc</li>
           </ul>
           <hr />
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
@@ -967,7 +961,7 @@ property: value;
         <section>
           <h3>Let's Develop It!</h3>
           <p>Typography</p>
-          <ol style="font-size: 30px; line-height: 1.75;">
+          <ol style="font-size: .8em; line-height: 1.75;">
             <li>Change the font-size of your h1 element. Use the px unit.</li>
             <li>Change the font-size of other elements on your page (headings or paragraphs).</li>
             <li>Give your headings and/or paragraphs a different font type.</li>
@@ -977,7 +971,7 @@ property: value;
         <!-- PRACTICE-->
         <section>
           <h3>Let's Develop It!: Extra Tips</h3>
-          <ul style="font-size: 30px; line-height: 1.75;">
+          <ul style="font-size: .8em; line-height: 1.75;">
             <li>Centering your entire page</li>
             <li>(Re)Sizing your images</li>
             <li>Checking for responsiveness (Using Dev Tools)</li>
