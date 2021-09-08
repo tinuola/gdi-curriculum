@@ -718,277 +718,284 @@ alt=""/&gt;
         <section>
           <h2>CSS</h2>
         </section>
-        
+
         <section>
-			<h3>CSS: What is it?</h3>
-			<p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
-			<p>CSS is a "style sheet language" that lets you style the elements on your page.</p><br>
-			<p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
-		  </section>
+          <h3>CSS: What is it?</h3>
+          <p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+          <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
   
-		  <section>
-			<h3>CSS: What can it do?</h3><br>
-			<p>All colored text, position, and size</p>
-			<img src="img/homepage-view.png" alt="Screenshot of homepage" height="400" />
-		  </section>
-		  <!-- The CSS Rule-->
-<section>
-	<h3>Anatomy of CSS</h3><br>
-	<p>
-	  CSS consists of <strong>style rules</strong>. Each style rule consists of a <strong>selector</strong> and
-	  <strong>declarations</strong> of <strong>property-value</strong> pairs:
-	</p><br>
-	<pre><code class="css">selector {
+        <section>
+          <h3>CSS: What can it do?</h3>
+          <p>All colored text, position, and size</p>
+          <img src="assets/imgs/gdi-homepage-view.png" alt="Screenshot of homepage" height="400" />
+        </section>
+
+        <!-- The CSS Rule-->
+        <section>
+          <h3>Anatomy of CSS</h3>
+          <p>CSS consists of <strong>style rules</strong>.</p> 
+          <p>Each style rule consists of a <strong>selector</strong> and <strong>declarations</strong> of <strong>property-value</strong> pairs:
+          </p>
+<pre><code class="css">selector {
   property: value;
   property: value;
-  }</code></pre><br>
-</section>
-<section>
-	<p>For example:</p><br>
-	<pre><code class="css">body {
+}</code></pre>
+        </section>
+
+        <section>
+          <p>Syntax</p>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+          <p>Example:</p>
+<pre><code class="css">body {
   color: yellow;
   background-color: black;
-  }</code></pre>
-  </section>
-  <!-- Connecting HTML to CSS-->
-<section>
-	<h3>Connecting CSS to HTML</h3><br>
-	<p class="green">3 Ways:</p><br>
-	<p>Inline</p><br> 
-	<p>Embedded</p><br>
-	<p>External</p><br>
-  </section>
-  <!-- Inline -->
-<section>
-	<h3>Connecting CSS to HTML: Inline</h3><br>
-	<pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
-  </code></pre><br>
-	<ul>
-	  <li>Uses the HTML <code>style</code> attribute.</li><br>
-	  <li>Only applies to one element at a time.</li><br>
-	  <li>Not preferred.</li>
-	</ul>
-  </section>
-  <!-- Embedded -->
-<section>
-	<h3>Connecting CSS to HTML: Embedded</h3><br>
-	<pre><code class = "html">&lt;head&gt;
+}</code></pre>
+        </section>
+
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <p class="green">3 Ways:</p>
+          <p>Inline</p>
+          <p>Embedded</p>
+          <p>External</p>
+        </section>
+
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3><br>
+<pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
+</code></pre>
+          <ul>
+            <li>Uses the HTML <code>style</code> attribute.</li>
+            <li>Only applies to one element at a time.</li>
+            <li>Not preferred.</li>
+          </ul>
+        </section>
+
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class = "html">&lt;head&gt;
   &lt;style&gt;
-  p {
-  color: blue;
-  font-size: 12px;
-  }
+    p {
+      color: blue;
+      font-size: 12px;
+    }
   &lt;/style&gt;
-  &lt;/head&gt;
-  </code></pre><br>
-	<ul>
-	  <li>Inside <code>&lt;head&gt;</code> element.</li><br>
-	  <li>Uses <code>&lt;style&gt;</code> tag.</li><br>
-	  <li>Only applies to that page.</li>
-	</ul>
-  </section>
-   <!-- External-->
-   <section>
-	<h3>Connecting CSS to HTML: External</h3><br>
-	<pre><code class = "html">&lt;head&gt;
-&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</code></pre>
+          <ul>
+            <li>Inside <code>&lt;head&gt;</code> element.</li>
+            <li>Uses <code>&lt;style&gt;</code> tag.</li>
+            <li>Only applies to that page.</li>
+          </ul>
+        </section>
+
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: External</h3>
+<pre><code class = "html">&lt;head&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
 &lt;/head&gt;
 </code></pre><br>
-	<ul>
-	  <li>Can be referenced from multiple pages.</li><br>
-	  <li>Reduced file size &amp; bandwidth.</li><br>
-	  <li>Easier to maintain in larger projects.</li><br>
-	  <li> This is the best practice!</li>
-	</ul>
-  </section>
-  <!-- PRACTICE-->
-  <section>
-	<h3>Let's develop it</h3><br>
-	<p>Embedded CSS:</p><br>
-	<ol>
-	  <li>In the head tag of your index.html file, beneath the title tag, add an opening and closing style tag
-		<!-- <ul>
-		  <li>CODEPEN: Skip this step</li>
-		</ul> -->
-	  </li><br>
-	  <li>Add / nest the CSS rule below in the style tag:
-		<!-- <ul>
-		  <li>CODEPEN: Add the rule to the CSS panel</li>
-		</ul> -->
-	  </li><br>
-	</ol>
-	<pre><code class = "css">body {
-background-color: turquoise;
-}
-</section>
-<section>
-</code></pre><br>
-	<p>Check your page and see what happens.</p>
-  </section>
-  <!-- CSS Selector Intro -->
-<section>
-	<h3>CSS: The Selector</h3><br>
-	<pre><code class="css">selector {
-  property: value;
-  property: value;
-  }</code></pre><br>
-	<p>
-	  The selector is used to select which elements in the HTML page will be given the styles inside the curly
-	  braces.
-	</p>
-  </section>
-  <!-- Selectors elements-->
-<section>
-	<h3>Types of Selectors: Element</h3><br>
-	<pre><code class="css">p {
-  property: value;
-  }
-  </code></pre><br>
-	<p>Selects all paragraph elements.</p><br>
-	<pre><code class="css">img {
-  property: value;
-  }
-  </code></pre><br>
-	<p>Selects all image elements.</p>
-  </section>
-  <section>
-	<h3>CSS Properties</h3><br>
-	<ul>
-	  <li>200? 300? 500?</li><br>
-	  <li>You're not expected to know them all!</li><br>
-	  <li>Focus on the commonly used ones</li><br>
-	  <li>Be okay looking things up!</li><br>
-	  <li>Note: CSS properties are case-sensitive</li>
-	</ul>
-  <hr />
-	<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">Common CSS properties (MDN)</a></p><br>
-	<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
-  </section>
+          <ul>
+            <li>Can be referenced from multiple pages.</li>
+            <li>Reduced file size &amp; bandwidth.</li>
+            <li>Easier to maintain in larger projects.</li>
+            <li> This is the best practice!</li>
+          </ul>
+        </section>
 
-  <section>
-	<h3>Property: Color</h3><br>
-	<p>The <code>color</code> property changes the color of the text.</p><br>
-	<pre><code class = "css">p {
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It</h3>
+          <p>Embedded CSS:</p>
+          <ol style="font-size: 30px">
+            <li>In the <code>head</code> tag of your index.html file, beneath the title tag, add an opening and closing <code>style</code> tag.</li><br>
+            <li>Add / nest the CSS rule below in the <code>style</code> tag:</li>
+          
+<pre><code class = "css">body {
+  background-color: turquoise;
+}
+</code></pre>
+            <li>Check your page and see what happens.</li>
+          </ol>
+        </section>
+
+        <!-- CSS SELECTORS -->
+        <section>
+        <h3>CSS: The Selector</h3>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+          <p>
+          The selector is used to select which elements in the HTML page will be given the styles inside the curly braces.
+          </p>
+        </section>
+
+        <section>
+          <h3>Types of Selectors: Element</h3>
+<pre><code class="css">p {
+property: value;
+}
+</code></pre>
+          <p>Selects all paragraph elements.</p><br>
+<pre><code class="css">img {
+property: value;
+}
+</code></pre>
+          <p>Selects all image elements.</p>
+        </section>
+
+        <!-- CSS PROPERTIES -->
+        <section>
+          <h3>CSS Properties</h3>
+          <ul>
+            <li>200? 300? 500?</li>
+            <li>You're not expected to know them all!</li>
+            <li>Focus on the commonly used ones</li>
+            <li>Be okay looking things up!</li>
+            <li>Note: CSS properties are case-sensitive</li>
+          </ul>
+          <hr />
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">Common CSS properties (MDN)</a></p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
+        </section>
+
+        <!-- COLOR -->
+        <section>
+          <h3>Property: color</h3>
+          <p>The <code>color</code> property changes the color of the text.</p>
+<pre><code class = "css">p {
   color: red;
-  }
-  </code></pre>
-  </section>
-  <!-- Background color-->
-<section>
-	<h3>Property: background-color</h3><br>
-	<p>The <code>background-color</code> property changes the color of the background.</p><br>
-	<pre><code class = "css">body {
-  background-color: hotpink;
-  }
-  </code></pre>
-  </section>
-  
-<!-- Color -->
-<section>
-	<h3>CSS Color Values</h3><br>
-	<p>Your browser can accept colors in many different ways:</p><br>
-  
-	<table style="margin: 0 auto">
-	  <tr>
-		<td><strong>Color name: </strong></td>
-		<td><code>red</code></td>
-	  </tr>
-	  <tr>
-		<td><strong>Hexadecimal value: </strong></td>
-		<td><code>#FF0000</code></td>
-	  </tr>
-	  <tr>
-		<td><strong>RGB value: </strong></td>
-		<td><code>rgb(255, 0, 0)</code></td>
-	  </tr>
-	</table>
-	<hr />
-	<p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p><br>
-	<p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
-  </section>
-  <!-- PRACTICE-->
-  <section>
-	<h3>Let's develop it</h3><br>
-	<p>Colors!</p><br>
-	<ol>
-	  <li>Change the background color of your site. Use a color name, hexcode or RGB value</li><br>
-	  <li>Change the font color of one or all of your heading.</li>
-  </section>
-  <!-- Font Size -->
-  <section>
-	<h3>Property: font-size</h3>
-	<p>The <code>font-size</code> property specifies the size of font.</p><br>
-	<pre><code class = "css">body {
-	  font-size: 12px;
-	  font-size: 1.5em;
-	  font-size: 100%;
 }
-</code></pre><br>
-  </section>
-  <section>
-<p>Font-size units:</p>
-<ul>
-<li>Pixels - "px"</li>
-<li>"rem" or "em" </li>
-<li>Percentage - %</li>
-<li>xx-small, medium, large, x-large, etc</li>
-</ul>
+</code></pre>
+        </section>
 
-<hr />
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
-  </section>
-  <!-- Fonts-->
-<section>
-	<h3>Property: Font-family</h3><br>
-	<p>The font-family property defines which font is used.</p><br>
-	<pre><code class = "css">p {
+        <!-- BACKGROUND COLOR -->
+        <section>
+          <h3>Property: background-color</h3>
+          <p>The <code>background-color</code> property changes the color of the background.</p>
+<pre><code class = "css">body {
+  background-color: hotpink;
+}
+</code></pre>
+        </section>
+  
+        <!-- COLOR VALUES -->
+        <section>
+          <h3>CSS Color Values</h3>
+          <p>Your browser can accept colors in many different ways:</p>
+
+          <table style="margin: 0 auto">
+            <tr>
+              <td><strong>Color name: </strong></td>
+              <td><code>red</code></td>
+            </tr>
+            <tr>
+              <td><strong>Hexadecimal value: </strong></td>
+              <td><code>#FF0000</code></td>
+            </tr>
+            <tr>
+              <td><strong>RGB value: </strong></td>
+              <td><code>rgb(255, 0, 0)</code></td>
+            </tr>
+          </table>
+          <hr />
+          <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
+          <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
+        </section>
+
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p>Colors!</p>
+          <ol>
+            <li>Change the background color of your site. Use a color name, hexcode or RGB value</li>
+            <li>Change the font color of one or all of your heading.</li>
+        </section>
+
+        <!-- FONT SIZE -->
+        <section>
+          <h3>Property: font-size</h3>
+          <p>The <code>font-size</code> property specifies the size of font.</p>
+<pre><code class = "css">body {
+  font-size: 12px;
+  font-size: 1.5em;
+  font-size: 100%;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Font-size units:</h3>
+          <ul>
+          <li>Pixels - "px"</li>
+          <li>"rem" or "em" </li>
+          <li>Percentage - %</li>
+          <li>xx-small, medium, large, x-large, etc</li>
+          </ul>
+          <hr />
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
+        </section>
+
+        <!-- FONT FAMILY-->
+        <section>
+          <h3>Property: font-family</h3>
+          <p>The font-family property defines which font is used.</p>
+<pre><code class = "css">p {
   font-family: "Times New Roman"; /* Specific font name */
   /* or */
   font-family: serif; /* Generic name */
   /* or */
   font-family: "Arial", sans-serif; /* Comma-separated list */
-  }
-  </code></pre><br>
-</section>
-<section>
-	<p>*When listing multiple fonts, always list a generic name last.</p>
-  <hr>
-	<p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p><br>
-	<p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
-  </section>
-  <!-- PRACTICE-->
-<section>
-	<h3>Let's develop it</h3><br>
-  <p>Typography</p><br>
-	<ol>
-	  <li>Change the font-size of your h1 element. Use the px unit</li><br>
-	  <li>Change the font-size of other elements on your page (headings or paragraphs)</li><br>
-	  <li>Give your headings and/or paragraphs a different font type</li>
-	</ol>
-  </section>
-  <!-- PRACTICE-->
-<section>
-	<h3>Let's develop it: Extra Tips</h3><br>
-	<p>Centering your entire page</p><br>
-	<p>Sizing your images</p><br>
-	<p>Checking for responsiveness (Using Dev Tools)</p><br>
-  </section>
-  
+}
+</code></pre>
+          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
+          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
+          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+        </section>
+
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p>Typography</p>
+          <ol style="font-size: 30px; line-height: 1.75;">
+            <li>Change the font-size of your h1 element. Use the px unit.</li>
+            <li>Change the font-size of other elements on your page (headings or paragraphs).</li>
+            <li>Give your headings and/or paragraphs a different font type.</li>
+          </ol>
+        </section>
+
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It!: Extra Tips</h3>
+          <ul style="font-size: 30px; line-height: 1.75;">
+            <li>Centering your entire page</li>
+            <li>(Re)Sizing your images</li>
+            <li>Checking for responsiveness (Using Dev Tools)</li>
+          </ul>
+        </section>
+
 				<!-- Course Conclusion -->
 				<section>
 					<h3>You did it!</h3>
-					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="People celebrating"/>
-					<p class="credit" style="font-size: 14px;">
-							Photo credit: 
-							<a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
-							<a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
-					</p>
-					
+					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="Happy woman jumping"/>
+					<p class="credit" style="font-size: 14px;">Photo credit: 
+            <a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+            <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+					</p>		
 				</section>
 
 				<!-- OPTIONAL: Show and Tell  -->
 				<section>
-					
 					<h2>Share What You've Built!</h2>
 				</section>
 
@@ -1007,10 +1014,10 @@ background-color: turquoise;
 				<!-- Resources -->
 				<section>
 					<h2>External Resources</h2>
-					<p> Free Code Camp</p>
-					<p> codecademy</p>
+					<p>Free Code Camp</p>
+					<p>Codecademy</p>
 					<p>CSS Tricks</p>
-
+          <p>Udemy</p>
 				</section>	
 
 				<!-- MUST USE/SHOW SLIDE -->
@@ -1025,11 +1032,8 @@ background-color: turquoise;
 				<!-- Instructor and/or TA Contact -->
 				<section>
 					<h2>Keep in Touch</h2>
-					<p>Instructor Name<a href="" target="_blank">LinkedIn</a></p>
-  <br>
-  					
-  					<p>TA Name <a href="">Github</a></p><br>
- 					
+					<p>Instructor: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
+          <p>TAs: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
 				</section>
 
 				<!-- Thank You -->
@@ -1040,7 +1044,7 @@ background-color: turquoise;
 				</section>
 			</div> <!-- End of Slides container -->
 		
-  		<footer>
+      <footer>
 				<!-- Update with Course Name -->
         <div class="copyright">
 					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder"/>
