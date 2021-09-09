@@ -56,7 +56,7 @@ To contribute to or update current course content, please see the `Contributing 
 
 7. Optional: Update the courses' `MARKETING.md` file.
 
-8. Update the `CHANGELOG.md` file.
+8. Update the `CHANGELOG.md` file in curriculum repo's root directory.
 
 **Do not delete** the `demo-gdi-slides.html` file. It is meant to serve as a reference for using reveal.js and as a style guide.
 
@@ -110,7 +110,7 @@ See the [Using Reveal.js](https://github.com/girldevelopit/gdi-curriculum/wiki/U
 
 - `index.html`
   - This is the primary file that a content/course creator will work in.
-  - For a cohort cl
+    - NOTE: For cohort classes, work will be done in `class#.html` files.
   - It contains sections for the course slides. Every `section` element or tag corresponds to a single slide.
 
 ```html
