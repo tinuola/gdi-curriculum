@@ -31,3 +31,14 @@ Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html
 _Add changes below this line, with the most recent change first._
 
 <hr>
+
+### 2021-09-08
+
+#### Added
+
+- CHANGELOG.md template.
+
+#### Changed
+
+- `index.html` (from class.html) to be main file for single classes; to be cover page/file for cohort classes.
+- `class.html` to be single class files for cohort classes.
