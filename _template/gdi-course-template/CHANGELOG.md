@@ -1,6 +1,6 @@
 # Changelog
 
-A changelog documents notable changes made to a project, or in this case, a course. For an open-source curriculum, a changelog is helpful for users and contributors to see what has changed with each course update.
+A changelog documents notable changes made to a project, or in this case, a course. For GDI's open-source curriculum, a changelog is helpful for users and contributors to see what has changed with each course update.
 
 We ask and encourage contributors to update their course changelog using the format below. To keep things simple we are not using semantic versioning. The date of the change, the type of change, and a short summary of the change are sufficient.
 
@@ -27,5 +27,7 @@ Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html
 #### Fixed
 
 - 1-2 line summary
+
+_Add changes below this line._
 
 <hr>
