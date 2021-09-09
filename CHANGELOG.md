@@ -1,6 +1,6 @@
 # Changelog
 
-A changelog documents notable changes made to a project, or in this case, a course. For an open-source curriculum, a changelog is helpful for users and contributors to see what has changed with each course update.
+A changelog documents notable changes made to a project, or in this case, a course. For GDI's open-source curriculum, a changelog is helpful for users and contributors to see what has changed with each course update.
 
 We ask and encourage contributors to update their course changelog using the format below. To keep things simple we are not using semantic versioning. The date of the change, the type of change, and a short summary of the change are sufficient.
 
@@ -12,20 +12,34 @@ Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html
 
 ### YYYY-MM-DD
 
-#### Added
+#### Added to:
 
 - 1-2 line summary
 
-#### Changed
+#### Changed in:
 
 - 1-2 line summary
 
-#### Removed
+#### Removed from:
 
 - 1-2 line summary
 
-#### Fixed
+#### Fixed in:
 
 - 1-2 line summary
+
+_Add changes below this line, with the most recent change first._
 
 <hr>
+
+### 2021-09-08
+
+#### Added to:
+
+- Repo: `CHANGELOG.md` file in root directory.
+- Repo: `pull_request_template.md` in `.github` folder in root directory.
+
+#### Changed in:
+
+- \_template: `index.html` (from class.html) to be main file for single classes; to be cover page/file for cohort classes.
+- \_template: `class.html` to be single class file for cohort classes.
