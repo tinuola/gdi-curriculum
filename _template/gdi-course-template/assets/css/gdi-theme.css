@@ -106,6 +106,44 @@ body {
 	transition: width 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
+.flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.flex .cta {
+	width: 40%;
+	margin: 10px 0;
+}
+.reveal .cta {
+	display: inline-block;
+	padding: 20px;
+	color: #d8ae64;
+	border-radius: 6px;
+	background-color: #01a9b4;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.reveal .cta:not(.image) {
+	color: #fff;
+	transition: background-color 1s ease;
+}
+
+.reveal .cta:not(.image):hover {
+	background-color: #2a4758;
+	color: #fff;
+}
+
+.reveal .cta.inactive {
+	background: #333;
+}
+.reveal .inactive {
+	pointer-events: none;
+}
+
 .reveal footer {
 	position: fixed;
 	width: 100%;
