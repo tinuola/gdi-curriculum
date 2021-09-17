@@ -436,356 +436,531 @@ console.log('Hello!'); // Or make one-line comments
           </ul>
         </section>
 
-      <!-- Variables -->
-      <section>
-        <h3>Variables</h3>
-        <p>A variable is a named container for a value that can change.</p>
-        <p>We use variables to store or hold values.</p>
-        <img src="assets/imgs/empty-glass.jpg" alt="Empty glass" class="noborder"/>
-        <p class="credit">
-          <small>Photo credit: <a href="http://www.flickr.com/photos/giuliag/3570562404/" target="_blank">giulia gasparro</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
-        </p>
-      </section>
+        <!-- Variables -->
+        <section>
+          <h3>Variables</h3>
+          <p>A variable is a named container for a value that can change.</p>
+          <p>We use variables to store or hold values.</p>
+          <img src="assets/imgs/empty-glass.jpg" width="500px" alt="Empty glass" class="noborder"/>
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/giuliag/3570562404/" target="_blank">giulia gasparro</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
-      <section>
-        <h3>Declaring a Variable</h3><br>
-        <p>To declare (create) a variable, just type the word <code>let</code> and the variable name.</p>
-<pre><code class="javascript">let numberOfKittens;</code></pre><br>
-        <p>It is a good idea to give your variable a starting value. This is called initializing the variable.</p>
-<pre><code class="javascript">let numberOfKittens = 5;</code></pre>
-      </section>
+        <section>
+          <h3>Declaring a Variable</h3>
+          <p>To declare (create) a variable, just type the word <code>let</code> and the variable name.</p>
+  <pre><code class="javascript">let numberOfKittens;</code></pre>
+          <br>
+          <p>It is a good idea to give your variable a starting value. This is called initializing the variable.</p>
+  <pre><code class="javascript">let numberOfKittens = 5;</code></pre>
+        </section>
 
-      <section>
-        <h3>Variable Values</h3><br>
-        <ul>
-          <li>When you first create a variable, it does not have a value (it is <code>undefined</code>).</li><br>
-          <li>You can set a value for a variable.</li><br>
-          <li>Variables can hold different types of data.</li><br>
-          <li>The value of a variable can change over time.</li><br>
-        </ul>
-      </section>
+        <section>
+          <h3>Variable Values</h3>
+          <ul>
+            <li>When you first create a variable, it does not have a value (it is <code>undefined</code>).</li>
+            <li>You can set a value for a variable.</li>
+            <li>Variables can hold different types of data.</li>
+            <li>The value of a variable can change over time.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Naming Variables</h3><br>
-        <ul>
-          <li>The variable name is case-sensitive.</li><br>
-          <li>A new variable should have a unique name.</li><br>
-          <li>Variable names need to start with a letter, <code>$</code>, or <code>_</code>.</li><br>
-          <li>Avoid <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words">reserved words</a>.</li><br>
-          <li>Choose clarity and meaning for humans to read later.</li><br>
-          <li>More than a word in a name? Use camelCase.</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Naming Variables</h3>
+          <ul>
+            <li>The variable name is case-sensitive.</li>
+            <li>A new variable should have a unique name.</li>
+            <li>Variable names need to start with a letter, <code>$</code>, or <code>_</code>.</li>
+            <li>Avoid <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words">reserved words</a>.</li>
+            <li>Choose clarity and meaning for humans to read later.</li>
+            <li>More than a word in a name? Use camelCase.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Using a Variable</h3><br>
-        <p>Once you have created a variable, you can use it in your code. Just type the name of the variable.</p>
-<pre><code class="javascript">let numberOfKittens = 5;
+        <section>
+          <h3>Using a Variable</h3>
+          <p>Once you have created a variable, you can use it in your code. Just type the name of the variable.</p>
+          <pre>
+            <code class="javascript">
+let numberOfKittens = 5;
+
 console.log(numberOfKittens);
-</code></pre>
-      </section>
+            </code>
+          </pre>
+        </section>
 
-      <section>
-        <h3>Let's Develop It</h3><br>
-        <ul>
-          In your <code>script.js</code> file:<br><br>
-          <li>Create a variable and give it a valid name and value</li><br>
-          <li>Display the variable value</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            In your <code>script.js</code> file:
+            <li>Create a variable and give it a valid name and value</li>
+            <li>Display the variable value</li>
+          </ul>
+        </section>
 
-      <!-- Data Types-->
-      <!-- <section>
-        <h3>Data Types</h3>
-        <ul>
-          <li><b>string</b>: string of characters
-            <pre><code class="javascript">let userName = 'Jane Lane';</code></pre>
-          </li><br> -->
-          <!-- <li><b>number</b>: integer or floating points  -->
-            <!--or floating point-->
-            <!-- <pre><code class="javascript">let myAge = 30;</code></pre>
-          </li><br>
-          <li><b>boolean</b>: true or false
-            <pre><code class="javascript">let catsAreBest = true;</code></pre>
-          </li><br>
-          <li>Others: undefined, null, array, object, function
-          </li>
-        </ul>
-      </section> -->
+        <!-- Data Types-->
+        <section>
+          <h3>Data Types</h3>
+          <ul>
+            <li><b>string</b>: string of characters
+              <pre><code class="javascript">let userName = 'Jane Lane';</code></pre>
+            </li>
+            <li><b>number</b>: integer or floating points 
+              or floating point
+              <pre><code class="javascript">let myAge = 30;</code></pre>
+            </li>
+            <li><b>boolean</b>: true or false
+              <pre><code class="javascript">let catsAreBest = true;</code></pre>
+            </li>
+            <li>Others: undefined, null, array, object, function
+            </li>
+          </ul>
+        </section>
 
-      <!-- Strings -->
-      <!-- <section>
-        <h3>Strings</h3>
-        <p>Variables can be strings (groups of characters). You put your string in single or double quotes.</p>
-<pre><code class="javascript">let kittensName = 'Fluffy';</code></pre><br>
-        <p>If you want to use a quote in your string, you'll need to <b>escape</b> it with a backslash.</p>
-<pre><code class="javascript">console.log('I\'d like to use an apostrophe');</code></pre>
-      </section> -->
+        <!-- Strings -->
+        <section>
+          <h3>Strings</h3>
+          <p>Variables can be strings (groups of characters). You put your string in single or double quotes.</p>
+  <pre><code class="javascript">let kittensName = 'Fluffy';</code></pre>
+          <br>
+          <p>If you want to use a quote in your string, you'll need to <b>escape</b> it with a backslash.</p>
+  <pre><code class="javascript">console.log('I\'d like to use an apostrophe');</code></pre>
+        </section>
 
-      <!-- <section>
-        <h3>Playing with Strings</h3>
-        <img src="dist/img/kitten-string.jpg" alt="Cat playing with string"/>
-        <p class="credit">
-          <small>Photo credit: <a href="http://www.flickr.com/photos/dirtbikedba/5796961878/" target="_blank">Mike Lawson</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
-        </p>
-      </section> -->
+        <section>
+          <h3>Playing with Strings</h3>
+          <img src="assets/imgs/kitten-string.jpg" alt="Cat playing with string"/>
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/dirtbikedba/5796961878/" target="_blank">Mike Lawson</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
-      <!-- <section>
-        <h3>Concatenate!</h3>
-        <img src="dist/img/concatenate.jpg" alt="Cat jumping on another cat."/>
-        <p class="credit">
-          <small>Photo credit: <a href="http://www.flickr.com/photos/furlined/8191032061/" target="_blank">Matt</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
-        </p>
-      </section>
+        <section>
+          <h3>Concatenate!</h3>
+          <img src="assets/imgs/concatenate.jpg" alt="Cat jumping on another cat."/>
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/furlined/8191032061/" target="_blank">Matt</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
-      <section>
-        <h3>String Operators</h3>
-        <p>You can put strings together with a <code>+</code>, the concatenation operator.</p>
-        <pre><code class="javascript">let kittensName = 'Fluffy ';
-let fullName = kittensName + 'McDougle';
-console.log(fullName); // Outputs 'Fluffy McDougle'
-</code></pre>
-      </section> -->
+        <section>
+          <h3>String Operators</h3>
+          <p>You can put strings together with a <code>+</code> sign, the concatenation operator.</p>
+          <pre>
+            <code class="javascript">
+  let kittensName = 'Fluffy ';
 
-        <!-- <section>
+  let fullName = kittensName + 'McDougle';
+  
+  console.log(fullName); // Outputs 'Fluffy McDougle'
+            </code>
+          </pre>
+        </section>
+
+        <section>
           <h3>String Operators</h3>
           <p>You can also use <code>+=</code> to add things to the end of a string.</p>
-<pre><code class="javascript">var kittensName = 'Admiral ';
+          <pre>
+            <code class="javascript">
+let kittensName = 'Admiral ';
+
 kittensName += 'Snuggles';
+
 console.log(kittensName); // Outputs 'Admiral Snuggles'
-</code></pre>
-        </section> -->
+            </code>
+          </pre>
+        </section>   
 
-      
+        <section>
+          <h3>Let's Develop It</h3>
+          <ul>
+            In your <code>script.js</code> file:
+            <li>Create two variables, a first name and a last name, and then put them together to make a full name.</li>
+            <li>Don't forget to display your results.</li>
+          </ul>
+        </section>
 
-      <!-- <section>
-        <h3>Let's Develop It</h3><br>
-        <ul>
-          In your <code>script.js</code> file:<br><br>
-          <li>Create two variables, a first name and a last name, and then put them together to make a full name.</li><br>
-          <li>Don't forget to display your results</li>
-        </ul>
-      </section> -->
+        <!-- Numbers-->
+        <section>
+          <h3>Numbers!</h3>
+          <img src="assets/imgs/kitten-basket.jpg" alt="Cats in a basket"/>
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/tom-poes/2159348460/" target="_blank">WJ van den Eijkhof</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
+        <section>
+          <h3>Numbers</h3>
+          <p>Variables can be numbers, either integers or floats (decimals).</p>
+          <pre>
+            <code class="javascript">
+let numberOfKittens = 5;
 
-      <!-- Numbers-->
-      <!-- <section>
-        <h3>Numbers!</h3>
-        <img src="dist/img/kitten-basket.jpg" alt="Cats in a basket"/>
-        <p class="credit">
-          <small>Photo credit: <a href="http://www.flickr.com/photos/tom-poes/2159348460/" target="_blank">WJ van den Eijkhof</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
-        </p>
-      </section>
-
-      <section>
-        <h3>Numbers</h3>
-        <p>Variables can be numbers, either integers or floats (decimals).</p>
-<pre><code class="javascript">let numberOfKittens = 5;
 let cutenessRating = 9.6;
-</code></pre> -->
-        <!-- <p>JavaScript automatically converts integers to floats</p>
-        <p><code>NaN</code> = Not-A-Number</p> -->
-      <!-- </section>
+            </code>
+          </pre>
+        </section>
 
-      <section>
-        <h3>Arithmetic Operators</h3>
-        <p>Once you have numbers, you can do math with them!</p>
-<pre><code class="javascript">let numberOfKittens = 5;
+        <section>
+          <h3>Arithmetic Operators</h3>
+          <p>Once you have numbers, you can do math with them!</p>
+          <pre>
+            <code class="javascript">
+let numberOfKittens = 5;
+
 let numberOfPuppies = 4;
+
 let numberOfAnimals = numberOfKittens + numberOfPuppies;
-</code></pre>
-      </section>
+            </code>
+          </pre>
+        </section>
 
-      <section>
-        <h3>Arithmetic Operators</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Example</th>
-              <th>Name</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr> -->
-              <!-- <td><code>-a</code></td>
-              <td> Negation</td>
-              <td>Opposite of <code>a</code>.</td>
-            </tr>
-            <tr> -->
-              <!-- <td><code>a + b</code></td>
-              <td>Addition</td>
-              <td>Sum of <code>a</code> and <code>b</code>.</td>
-            </tr>
-            <tr>
-              <td><code>a - b</code></td>
-              <td>Subtraction</td>
-              <td>Difference of <code>a</code> and <code>b</code>.</td>
-            </tr>
-            <tr>
-              <td><code>a * b</code></td>
-              <td>Multiplication</td>
-              <td>Product of <code>a</code> and <code>b</code>.</td>
-            </tr>
-            <tr>
-              <td><code>a / b</code></td>
-              <td>Division</td>
-              <td>Quotient of <code>a</code> and <code>b</code>.</td>
-            </tr>
-            <tr>
-              <td><code>a % b</code></td>
-              <td>Modulus</td>
-              <td>Remainder of <code>a</code> divided by <code>b</code>.</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section>
+          <h3>Arithmetic Operators</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Example</th>
+                <th>Name</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>-a</code></td>
+                <td> Negation</td>
+                <td>Opposite of <code>a</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a + b</code></td>
+                <td>Addition</td>
+                <td>Sum of <code>a</code> and <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a - b</code></td>
+                <td>Subtraction</td>
+                <td>Difference of <code>a</code> and <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a * b</code></td>
+                <td>Multiplication</td>
+                <td>Product of <code>a</code> and <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a / b</code></td>
+                <td>Division</td>
+                <td>Quotient of <code>a</code> and <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a % b</code></td>
+                <td>Modulus</td>
+                <td>Remainder of <code>a</code> divided by <code>b</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <section>
-        <h3>Let's Develop It</h3><br>
-        <ul>
-          In your <code>script.js</code> file:<br><br>
-          <li>Create two variables and try some arithmetic operators.</li><br>
-          <li>Don't forget to display your results.</li>
-        </ul>
-      </section> -->
-      <!-- </section> -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            In your <code>script.js</code> file:
+            <li>Create two variables and try some arithmetic operators.</li>
+            <li>Don't forget to display your results.</li>
+          </ul>
+        </section>
 
-      <!-- Strings and Numbers -->
-      
-      <!-- <section>
-        <h3>Combining strings and numbers</h3><br>
-        <p>You can use concatenation to mix strings and numbers. When you do this, JavaScript will treat the number like a string.</p><br>
-<pre><code class="javascript">let numberOfFruit = 6;
+        <!-- Strings and Numbers -->
+        <section>
+          <h3>Combining strings and numbers</h3>
+          <p>You can use concatenation to mix strings and numbers. When you do this, JavaScript will treat the number like a string.</p>
+          <pre>
+            <code class="javascript">
+let numberOfFruit = 6;
+
 let typeOfFruit = 'bananas';
+
 let allTheFruit = 'I have ' + numberOfFruit + ' ' + typeOfFruit + '!';
+
 console.log(allTheFruit);
-</code></pre>
-      </section>
+            </code>
+          </pre>
+        </section>
 
-      <section>
-        <h3>Let's Develop It</h3><br>
-        <ul>
-          Create a program to calculate the tip at a restaurant. It should:<br><br>
-          <li>Have variables for the bill <b>before the tip</b> and the <b>tip percentage</b>.</li><br>
-          <li>Calculate the total bill.</li><br>
-          <li>Output a sentence like "Your total bill, with tip, is $14.75".</li>
-          <br> -->
-          <!-- <li>Bonus: Use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed" target="_blank"><code>toFixed()</code></a> to round the bill total to 2 decimals.</li> -->
-        <!-- </ul>
-      </section>
+        <section>
+          <h3>Let's Develop It</h3>
+          <ul>
+            Create a program to calculate the tip at a restaurant. It should:
+            <li>Have variables for the bill <b>before the tip</b> and the <b>tip percentage</b>.</li>
+            <li>Calculate the total bill.</li>
+            <li>Output a sentence like "Your total bill, with tip, is $14.75".</li>
+            <li>Bonus: Use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed" target="_blank"><code>toFixed()</code></a> to round the bill total to 2 decimals.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Variables and User Inputs</h3><br>
-        <p>Variables can also store input from users</p><br>
-<pre><code class="javascript">let name = prompt("What's your name?");
-console.log('Hello' + name);
-</code></pre>
-      </section>
+        <!--If / Else -->
+        <section>
+          <h3>Control Flow</h3>
+          <img src="assets/imgs/fork-path.jpg" width="500px" alt="Forked path" />
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/dennism2/1504087870/" target="_blank">DennisM2</a>
+            <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
-      <section>
-        <h3>Variables and User Inputs</h3><br>
-        <p>The preferred and standard way is to use a form element.</p>
-      </section>
+        <section>
+          <h3>The if statement</h3>
+          <p>Use <code>if</code> statements to decide which lines of code to execute, based on a condition.</p>
+          <pre>
+            <code class="javascript">
+if (condition) {
+  // statements to execute
+}
+            </code>
+          </pre>
+          
+          <pre>
+            <code class="javascript">
+let age = 30;
 
-      <section>
-        <h3>Let's Develop It</h3><br>
-        <p>Create a program that prompts users for their name and age, calculates and prints their birth year. It should:</p><br>
-        <ul>
-          <li>Have variables for the name and age.</li><br>
-          <li>Calculate and store the birth year in a variable.</li><br>
-          <li>Output a sentence such as: "Hi Linda. You were born in 1980."</li><br>
-        </ul>
-      </section> -->
+if (age &gt; 18) {
+  console.log('You are an adult');
+}
+            </code>
+          </pre>
+        </section>
 
-      <!-- Functions -->
-      <!-- <section>
-        <h3>Functions</h3>
-        <p>Functions are separable, reusable pieces of code.
-        <img src="dist/img/legos.jpg" alt="Pile of legos"/>
-        <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/catzrule/9940388305/">Rick Payette</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
-      </section> -->
+        <section>
+          <h3>Comparison Operators</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Example</th>
+                <th>Name</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody style="font-size:24px">
+              <tr>
+                <td><code>a == b</code></td>
+                <td>Equal</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is equal to <code>b</code> (can be different
+                  types).
+                </td>
+              </tr>
+              <tr>
+                <td><code>a === b</code></td>
+                <td>Identical</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is equal to <code>b</code>, and the same type.
+                </td>
+              </tr>
+              <tr>
+                <td><code>a != b</code></td>
+                <td>Not equal</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is not equal to <code>b</code> (can be different
+                  types).
+                </td>
+              </tr>
+              <tr>
+                <td><code>a !== b</code></td>
+                <td>Not identical</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is not equal to <code>b</code>, or they are not
+                  the same type.
+                </td>
+              </tr>
+              <tr>
+                <td><code>a &lt; b</code></td>
+                <td>Less than</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is strictly less than <code>b</code>.
+                </td>
+              </tr>
+              <tr>
+                <td><code>a &gt; b</code></td>
+                <td>Greater than</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is strictly greater than <code>b</code>.
+                </td>
+              </tr>
+              <tr>
+                <td><code>a &lt;= b</code></td>
+                <td>Less than or equal to</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is less than or equal to <code>b</code>.
+                </td>
+              </tr>
+              <tr>
+                <td><code>a &gt;= b</code></td>
+                <td>Greater than or equal to</td>
+                <td>
+                  <strong><code>TRUE</code></strong> if <code>a</code> is greater than or equal to <code>b</code>.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <!-- <section>
-        <h3>Declaring Functions</h3>
-        <p>To declare (create) a function, you can give it a name, then include all the code for the function inside curly brackets <code>{}</code></p>
-      <pre><code class="javascript">function parrotFacts() {
-      console.log('Some parrot species can live for over 80 years');
-      console.log('Kakapos are a critically endangered flightless parrot');
-      }
-      </code></pre>
-        <p>Functions can have multiple lines.</p>
-      </section> -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>Make a variable called "temperature".</li>
+            <li>Write code that tells you to put on a coat if it is below 50 degrees.</li>
+          </ul>
+        </section>
+        
+        <!--If/else -->
+        <section>
+          <h3>Even more control flow</h3>
+          <img src="assets/imgs/toomanysigns.jpg" width="500px" alt="Sign post with multiple signs" />
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/thomashawk/2402598275/" target="_blank">Thomas Hawk</a>
+            <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small>
+          </p>
+        </section>
 
-      <!-- <section>
-        <h3>Using Functions</h3>
-        <p>To invoke (use) a function, you type its name, followed by parenthesis <code>()</code></p>
-      <pre><code class="javascript"> parrotFacts();</code></pre>
-        <p>We'll talk about what can go inside those parenthesis in a minute! For now, leave them empty.</p>
-      </section> -->
+        <section>
+          <h3>The if/else statement</h3>
+          <p>Use <code>else</code> to provide an alternate set of instructions.</p>
+          <pre>
+            <code class="javascript">
+let age = 30;
 
-      <!-- <section>
-        <h3>What's going on here?</h3>
-        <p>A function is a group of code you can reuse many times. Whenever you invoke a function by using it's name, you tell the browser to run the code inside the function.</p>
-        <p>You must declare a function before you can use it.</p>
-      </section> -->
+if (age &gt;= 16) {
+  console.log('Yay, you can drive!');
+} else {
+  console.log('Sorry, you have ' + (16 - age) +
+  ' years until you can drive.');
+}
+            </code>
+          </pre>
+        </section>
 
-      <!-- <section>
-        <h3>Let's Develop It</h3>
-        <p>Write a function that outputs a sentence. Then invoke that function later in your code.</p>
-      </section> -->
+        <section>
+          <h3>The if/else statement</h3>
+          <p>If you have multiple conditions, you can use <code>else if</code>.</p>
+          <pre><code class="javascript">            
+let age = 30;
 
-      <!-- <section>
-        <h3>Arguments</h3>
-        <p>Functions can accept input values, called <code>arguments</code>.</p>
-      <pre><code class="javascript">function callKitten(kittenName){
-      console.log('Come here, ' + kittenName + '!');
-      }
+if (age &gt;= 35) {
+  console.log('You can vote AND run for President!');
+} else if (age &gt;= 18) {
+  console.log('You can vote!');
+} else {
+  console.log('You can\'t vote.');
+}
+            </code>
+          </pre>
+        </section>
 
-      callKitten('Fluffy'); // outputs 'Come here, Fluffy!'
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p>Modify your "wear a coat" code for these conditions:</p>
+          <ol>
+            <li>If it's less than 60 degrees, wear a jacket.</li>
+            <li>If it's less than 45 degrees, wear a coat and a hat.</li>
+            <li>Otherwise, wear whatever you want.</li>
+          </ol>
+        </section>
 
-      function addNumbers(a, b){
-      console.log(a + b);
-      }
+        <!-- Functions -->
+        <section>
+          <h3>Functions</h3>
+          <p>Functions are a data type.</p>
+          <p>Functions are reusable pieces of code. <img src="assets/imgs/legos.jpg" width="500px" alt="Pile of legos" /></p>
+          <p>
+            <small>Photo credit: <a href="http://www.flickr.com/photos/catzrule/9940388305/">Rick Payette</a>
+            <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small>
+          </p>
+        </section>
 
-      addNumbers(5, 7);  // outputs 12
-      addNumbers(9, 12); // outputs 21
-      </code></pre>
-      </section> -->
+        <section>
+          <h3>Declaring Functions</h3>
+          <p>
+            To declare (create) a function, you can give it a name, then include all the code for the function inside curly brackets <code>{}</code>
+          </p>
+          <pre>
+            <code class="javascript">
+function parrotFacts() {
 
-      <!-- <section>
-        <h3>Arguments</h3>
-        <p>You can also pass <code>variables</code> into functions. These variables do not need to have the same name as the function arguments.</p>
-      <pre><code class="javascript">function addOne(num){
-      var newNumber = num + 1;
-      console.log('You now have ' + newNumber);
-      }
+  console.log('Some parrot species can live for over 80 years');
 
-      // Declare variables
-      var numberOfKittens = 5;
-      var numberOfPuppies = 4;
+  console.log('Kakapos are a critically endangered flightless parrot');
+}
+            </code>
+          </pre>
+        </section>
 
-      // Use them in functions
-      addOne(numberOfKittens);
-      addOne(numberOfPuppies);
-      </code></pre>
-      </section> -->
+        <section>
+          <h3>Using Functions</h3>
+          <p>To invoke (use) a function, you type its name, followed by parenthesis <code>()</code></p>
+          <pre><code class="javascript"> parrotFacts();</code></pre>
+          <p>We'll talk about what can go inside those parenthesis in a minute! For now, leave them empty.</p>
+        </section>
 
-      <!-- <section>
-        <h3>Let's Develop It</h3>
-        <p>Write a simple program to combine a first name and a last name inside a function. Then update the function to accept a first and last name as arguments.</p>
-      </section> -->
+        <section>
+          <h3>Functions</h3>
+          <ul id="fragments">
+            <li>A function is a group of code you can reuse many times.</li>
+            <li class="fragment">Whenever you invoke a function by using it's name, you tell the browser to run the code inside the function.</li>
+            <li class="fragment">You must declare a function before you can use it.</li>
+          </ul>
+        </section>
+
+        <!-- PRACTICE -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>Write (declare) a function that outputs a sentence.</li>
+            <li>Then call (invoke) that function.</li>
+          </ul>
+        </section>
+      
+        <!-- Arguments -->
+        <section>
+          <h3>Arguments</h3>
+          <p>Functions can accept input values, called <code>arguments</code>.</p>
+          <pre>
+            <code class="javascript">
+function callKitten(kittenName){
+  console.log('Come here, ' + kittenName + '!');
+}
+
+callKitten('Fluffy'); // outputs 'Come here, Fluffy!'
 
 
+function addNumbers(a, b){
+  console.log(a + b);
+}
+
+addNumbers(5, 7);  // outputs 12
+addNumbers(9, 12); // outputs 21
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ul>
+            <li>Write a simple program to combine a first name and a last name inside a function.</li>
+            <li>Update the function to accept a first and last name as arguments.</li>
+            <li>Then call (invoke) the function.</li>
+          </ul>
+        </section>
 
 				<!-- Course Conclusion -->
 				<section>
 					<h3>You did it!</h3>
 					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  height="400px" alt="People celebrating"/>
-					<small>Photo credit: 
-							<a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
-							<a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
-					</small>
+          <p>
+            <small>Photo credit: 
+                <a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+                <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+            </small>
+        </p>
 					
 				</section>
 

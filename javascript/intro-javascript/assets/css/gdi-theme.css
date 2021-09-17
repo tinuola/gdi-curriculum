@@ -42,8 +42,11 @@ body {
 .reveal h6 {
 	font-size: 0.33333em;
 }
-.reveal p {
+.reveal p,
+.reveal table {
 	font-size: 0.75em;
+}
+.reveal p {
 	margin: 15px 0;
 }
 
@@ -125,17 +128,13 @@ body {
 }
 
 .reveal pre {
-	font-size: 0.65em;
+	font-size: 0.5em;
 	margin: 15px auto;
 	line-height: 1em;
 }
 
 .reveal small {
 	font-size: 0.5em;
-}
-
-.code-badge-pre .code-badge {
-	top: 25px;
 }
 
 ol,
