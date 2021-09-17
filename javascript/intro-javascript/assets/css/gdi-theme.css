@@ -137,6 +137,10 @@ body {
 	font-size: 0.5em;
 }
 
+.reveal .slide-number {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
 ol,
 ul {
 	font-size: 0.8em;
@@ -145,10 +149,6 @@ ul {
 
 .left-align {
 	text-align: left;
-}
-
-.img-credit {
-	font-size: 14px;
 }
 
 .flex-container {
