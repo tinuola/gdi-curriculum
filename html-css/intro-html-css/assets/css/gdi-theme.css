@@ -9,7 +9,6 @@
 .reveal,
 body {
 	font-family: Gotham-Round, sans-serif;
-	/* font-size: 30px; */
 }
 
 .reveal h1,
@@ -22,7 +21,6 @@ body {
 	margin: 0 0 20px;
 	color: #f05b62;
 	line-height: 1.25em;
-	/* letter-spacing: 0.02em; */
 	text-transform: none;
 }
 
@@ -43,6 +41,13 @@ body {
 }
 .reveal h6 {
 	font-size: 0.33333em;
+}
+.reveal p,
+.reveal table {
+	font-size: 0.75em;
+}
+.reveal p {
+	margin: 15px 0;
 }
 
 ::-moz-selection {
@@ -101,6 +106,44 @@ body {
 	transition: width 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
+.flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.flex .cta {
+	width: 40%;
+	margin: 10px 0;
+}
+.reveal .cta {
+	display: inline-block;
+	padding: 20px;
+	color: #d8ae64;
+	border-radius: 6px;
+	background-color: #01a9b4;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.reveal .cta:not(.image) {
+	color: #fff;
+	transition: background-color 1s ease;
+}
+
+.reveal .cta:not(.image):hover {
+	background-color: #2a4758;
+	color: #fff;
+}
+
+.reveal .cta.inactive {
+	background: #333;
+}
+.reveal .inactive {
+	pointer-events: none;
+}
+
 .reveal footer {
 	position: fixed;
 	width: 100%;
@@ -122,16 +165,28 @@ body {
 	margin: 0;
 }
 
-.left-align {
-	text-align: left;
-}
-
-.img-credit {
-	font-size: 14px;
-}
-
 .reveal pre {
 	font-size: 0.5em;
+	margin: 15px auto;
+	line-height: 1em;
+}
+
+.reveal small {
+	font-size: 0.5em;
+}
+
+.reveal .slide-number {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+ol,
+ul {
+	font-size: 0.8em;
+	line-height: 1.75;
+}
+
+.left-align {
+	text-align: left;
 }
 
 .flex-container {
