@@ -9,7 +9,6 @@
 .reveal,
 body {
 	font-family: Gotham-Round, sans-serif;
-	/* font-size: 30px; */
 }
 
 .reveal h1,
@@ -22,7 +21,6 @@ body {
 	margin: 0 0 20px;
 	color: #f05b62;
 	line-height: 1.25em;
-	/* letter-spacing: 0.02em; */
 	text-transform: none;
 }
 
@@ -43,6 +41,9 @@ body {
 }
 .reveal h6 {
 	font-size: 0.33333em;
+}
+.reveal p {
+	font-size: 0.8em;
 }
 
 ::-moz-selection {
@@ -122,16 +123,22 @@ body {
 	margin: 0;
 }
 
+.reveal pre {
+	font-size: 0.65em;
+}
+
+ol,
+ul {
+	font-size: 0.8em;
+	line-height: 1.75;
+}
+
 .left-align {
 	text-align: left;
 }
 
 .img-credit {
 	font-size: 14px;
-}
-
-.reveal pre {
-	font-size: 0.5em;
 }
 
 .flex-container {
