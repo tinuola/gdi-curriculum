@@ -2,14 +2,9 @@
 
 This folder contains slide content, instructor guidelines and marketing copy for the following `Data Science` courses currently offered by GDI:
 
-* ### Intro to SQL 1 Cohort
-  * A 6-class, 12-hour series that covers the use of SQL and its basic syntax.
+- ### Intro to SQL 1 Cohort
 
-* ### Exploratory Data Analysis using Pandas
-  * tbd
+  - A 6-class, 12-hour series that covers the use of SQL and its basic syntax.
 
-* ### Tableau 1 Cohort
-  * tbd
-
-
-
+- ### SQL 2 Cohort
+  - tbd
