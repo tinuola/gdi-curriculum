@@ -6,10 +6,10 @@ This folder contains slide content, instructor guidelines and marketing copy for
 
 An introductory class to HTML & CSS.
 
-### FrontEnd Fundamentals 1 Cohort
+### Web Design Essentials 1
 
 A six-class, 12-hour beginner series.
 
-### FrontEnd Fundamentals 2 Cohort
+### Web Design Essentials 2
 
 A six-class, 12-hour intermediate series.
