@@ -2,14 +2,9 @@
 
 This folder contains slide content, instructor guidelines and marketing copy for the following `JavaScript` courses currently offered by GDI:
 
-* ### Intro to JavaScript
-  * A 75-minute introduction to basic web concepts, aka `Web 101`.
+- ### Introduction to JavaScript
 
-* ### JavaScript Fundamentals 1
-  * A two-hour workshop on using Visual Studio Code.
+  - A three hour course that covers basic JavaScript concept.
 
-* ### Intro to Programming Fundamentals
-  * tbd.
-
-* ### Intro to the Command Line 
-  * tbd.
+- ### React Cohort
+- A six-part series that explores React concepts and the latest features in the ecosystem. Participants learn to build a real-world app.
