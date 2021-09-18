@@ -10,27 +10,38 @@ Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html
 
 ## Format
 
+<small>
+
 ### YYYY-MM-DD
 
 #### Added to:
 
-- 1-2 line summary
-
 #### Changed in:
 
-- 1-2 line summary
+#### Updated in:
 
 #### Removed from:
-
-- 1-2 line summary
 
 #### Fixed in:
 
 - 1-2 line summary
 
 _Add changes below this line, with the most recent change first._
+</small>
 
 <hr>
+
+### 2021-09-16
+
+#### Added to:
+
+- JavaScript: Created `intro-javascript` folder and content.
+- JavaScript: Moved `react` folder into JavaScript.
+
+#### Updated in:
+
+- \_template: CSS updates to gdi stylesheet.
+- \_template: Minor layout updates to demo gdi and cohort files.
 
 ### 2021-09-08
 
