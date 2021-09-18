@@ -8,26 +8,19 @@ To learn more about changelogs, see [keepachangelog.com](https://keepachangelog.
 
 Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html), [Atlassian](https://developer.atlassian.com/platform/forge/changelog/), [React Dev Tools](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md)
 
-## Format
+<hr>
 
-<small>
+**Format**
 
-### YYYY-MM-DD
-
-#### Added to:
-
-#### Changed in:
-
-#### Updated in:
-
-#### Removed from:
-
-#### Fixed in:
-
-- 1-2 line summary
+<sup>YYYY-MM-DD</sup><br>
+<sup>Added to:</sup><br>
+<sup>Changed in:</sup><br>
+<sup>Updated in:</sup><br> 
+<sup>Removed from:</sup><br> 
+<sup>Fixed in:</sup><br>
+<sup>-(include 1-2 line summary)</sup>
 
 _Add changes below this line, with the most recent change first._
-</small>
 
 <hr>
 
