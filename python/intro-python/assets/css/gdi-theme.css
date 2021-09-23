@@ -191,9 +191,17 @@ ul {
 
 .flex-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .flex-item {
-	flex-basis: 50%;
+	flex-basis: 48%;
+}
+
+.reveal section > .flex-container img {
+	max-width: 100%;
+}
+
+.flex-item img {
+	margin: 0;
 }
