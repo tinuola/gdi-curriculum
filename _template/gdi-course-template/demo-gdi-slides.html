@@ -72,7 +72,7 @@
 
 				<!-- Fragments -->
 				<section>
-					<h3>Fragments</h3>
+					<h2>Fragments</h2>
 					<div class="fragment">
 						<p>Reveal contents in...</p>
 					</div>
@@ -111,9 +111,9 @@
 					</ol>
 				</section>
 
-				<!-- Basic Image -->
+        <!-- Basic Image -->
 				<section>
-					<h2>Add Images</h2>
+					<h2>Images</h2>
 					<img src="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg" width="500px" alt="">
 					<p>Remember to give credit.</p>
 					<p>
@@ -123,10 +123,79 @@
             </small>
 				</p>
 				</section>
+
+				<!-- Image and Text -->
+				<section>
+					<h2>Image and Text</h2>
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg" alt="">
+            </div>
+            <div class="flex-item">
+              <p class="left-align">Some content to the left...</p>
+              <p class="left-align">Or to reverse order, just switch the code snippets.</p>
+            </div>
+          </div>
+				</section>
 				
 				<!-- Background Image -->
 				<section data-background="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg">
 					<h2 style="color: #fff; font-weight: 600;">Add a background Image</h2>
+				</section>
+
+        <!-- Colored Background -->
+				<section data-background-color="#F0E182">
+					<h2 style="color: #1A1735; font-weight: 600;">Change Background Colors</h2>
+          <h4 style="color: #1A1735; font-weight: 600;">Use <a href="https://brandfolder.com/gdi" target="_blank">GDI Brand Colors</a>.</h4>
+				</section>
+
+        <!-- Animated Images or GIFs -->
+        <section>
+          <h2>Animated Images/GIFs</h2>
+          <img src="https://media.giphy.com/media/3ohzdOVasfbk9eY8es/giphy.gif" alt="">
+        </section>
+        
+        <!-- Embed Video -->
+        <section>
+          <h2>Embed Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-v6F7qBMC7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>The next slide shows adding video as a background.</h3>
+        </section>
+
+        <!-- Video Background -->
+        <section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" 
+        data-background-video-loop data-background-video-muted>
+        </section>
+
+        <!-- Tables -->
+				<section>
+					<h2>Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Data type</th>
+								<th>Example values</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Integers</td>
+								<td><code>2</code> <code>44</code> <code>-3</code></td>
+							</tr>
+							<tr>
+								<td>Floats</td>
+								<td><code>3.14</code> <code>4.5</code> <code>-2.0</code></td>
+							</tr>
+							<tr>
+								<td>Booleans</td>
+								<td><code>True</code> <code>False</code></td>
+							</tr>
+							<tr>
+								<td>Strings</td>
+								<td><code>'¡hola!'</code> <code>'its python time!'</code></td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 
         <!-- Slides with Code: Python  -->
@@ -194,53 +263,10 @@ function helloWorld(){
             </code>
           </pre>
         </section>
-
-				<!-- Tables -->
-				<section>
-					<h2>Create Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Data type</th>
-								<th>Example values</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Integers</td>
-								<td><code>2</code> <code>44</code> <code>-3</code></td>
-							</tr>
-							<tr>
-								<td>Floats</td>
-								<td><code>3.14</code> <code>4.5</code> <code>-2.0</code></td>
-							</tr>
-							<tr>
-								<td>Booleans</td>
-								<td><code>True</code> <code>False</code></td>
-							</tr>
-							<tr>
-								<td>Strings</td>
-								<td><code>'¡hola!'</code> <code>'its python time!'</code></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-        <!-- Speaker View -->
-        <!-- <section data-markdown>
-          <h2>Speaker View</h2>
-					<p>There's a <a href="https://revealjs.com/speaker-view/" target=_blank>speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-					<p>P.S. This won't work when running the slides locally unless you run reveal.js from a <a href="https://github.com/girldevelopit/gdi-slides-template/wiki#compiling-slides-and-running-locally" target="_blank">local web server</a>.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-        </section> -->
       
 				<!-- Conclusion -->
 				<section>
-					<h4>These are the most common use cases of reveal.js features for GDI slide content.</h4>
+					<h4>These are the common use cases of reveal.js features for GDI slide content.</h4>
 					<h4>Interested in more ways to use reveal.js? Visit the framework's <a href="https://revealjs.com/" target=_blank>website</a> for a full demo.</h4>
 				</section>
 				
@@ -269,6 +295,7 @@ function helloWorld(){
 				hash: true,
 				center: true,
 				slideNumber: true,
+        slideNumber: 'c/t',
 				showNotes: false,
 				margin: 0.1,
 				preloadIframes: true,
