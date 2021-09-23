@@ -15,14 +15,20 @@ Examples of changelogs: [TickTick](https://ticktick.com/public/changelog/en.html
 <sup>YYYY-MM-DD</sup><br>
 <sup>Added to:</sup><br>
 <sup>Changed in:</sup><br>
-<sup>Updated in:</sup><br> 
-<sup>Removed from:</sup><br> 
+<sup>Updated in:</sup><br>
+<sup>Removed from:</sup><br>
 <sup>Fixed in:</sup><br>
 <sup>-(include 1-2 line summary)</sup>
 
 _Add changes below this line, with the most recent change first._
 
 <hr>
+
+### 2021-09-23
+
+#### Updated in:
+
+- \_template: Adding demo slides for animated GIFs and embedded video.
 
 ### 2021-09-16
 
