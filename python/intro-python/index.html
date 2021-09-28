@@ -243,11 +243,86 @@
 					</pre>
         			</section>					
 					
-					
-					
-					
-					
-					
+			 	<section>
+					<h3>Boolean Data Type</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						#boolean data types are True/False
+						a = True
+						print(type(a))
+
+						b = False
+						print(type(b))
+					 </code>
+					</pre>
+        			</section>					
+
+				<section>
+					<h3>Boolean Operators</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						#boolean operators evaluate to True or False
+						a = 1
+						b = 2
+
+						print(a > b) #is a greater than b?
+						print(a < b) #is a less than b?
+						print(a == b) #is a equal to b? 
+						print(a != b) #is a not equal to b?
+					 </code>
+					</pre>
+        			</section>
+
+				<section>
+					<h3>If, Else statements</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						#you can have your code make choices with if, else
+						a = 1
+						b = 2
+
+						if a == b: #if the statement evaluates to True
+						  print("a is equal to b")
+						else: #if the statement evaluates to False
+						  print("a is not equal to b")
+
+					 </code>
+					</pre>
+        			</section>
+
+				<section>
+					<h3>If, Else statements cont.</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						#if, else statements with strings
+						day = "Friday"
+
+						if day == "Friday":
+						  print("Happy Friday!")
+						else: 
+						  print("Have a good day!")
+
+					 </code>
+					</pre>
+        			</section>					
+
+				<section>
+					<h3>Putting it all together!</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  else:
+						    print("Have a good day!")
+
+						hello("Saturday")
+						hello("Friday")
+
+					 </code>
+					</pre>
+        			</section>					
 					
 
 				<!-- Course Conclusion -->
