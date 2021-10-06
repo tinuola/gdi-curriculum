@@ -1,14 +1,10 @@
 # GDI Course and Slides Template
 
-_Work in Progress..._
+**Girl Develop It** uses a customized HTML slide template for its open-source course content.
 
-**Girl Develop It** uses a customized HTML slide template for its open-source course content and slides.
+Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
 
-Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN in the slides.
-
-Creating a new course is easy! Simply create a duplicate or copy of the `gdi-course-template` folder. All the CSS and JavaScript needed are included; you only need to edit the `index.html` file to build content. This README contains additional instructions for building a course.
-
-To contribute to or update current course content, please see the `Contributing Guidelines` page in this repo's Wiki. _(Coming soon)_
+Creating a new course is easy! Simply create a duplicate of the `gdi-course-template` folder. All the CSS and JavaScript needed are included; you only need to edit the `index.html` file to build content. This README contains additional instructions for building a course.
 
 - [How to Use this Template](#how-to-use-this-template)
   - [Course Creation Tips](#course-creation-tips)
