@@ -91,7 +91,6 @@
 					<p>Northwestern University, Chicago, IL</p>
 				</section>  -->
 			
-			
 				<!--Course outline--->
 				<section>
 					<h2>Course Outline</h2>
@@ -121,8 +120,7 @@
 						<p>"Under the hood" the computer reads the program as binary code.</p>
 					</div>
 						
-				</section>	
-				
+				</section>		
 	
 				<!-- Course Slides -->
 				<!-- Create as many new sections as needed -->
@@ -331,9 +329,88 @@
 
 					 </code>
 					</pre>
-        			</section>					
-					
+        			</section>
+				
+				<section>
+					<h3>Lists</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						
+						#list can hold multiple elements of different types
+						my_list = ["hello", 1, 3.5]
+						
+						#lists start at 0
+						my_list[0]
+						
+						#how many elements are in my list?
+						print(len(my_list))
 
+					 </code>
+					</pre>
+        			</section>	
+				
+				<section>
+					<h3>Using "elif" (else+if) to add another expression</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  elif day in ["Saturday", "Sunday"]:
+						    print("Woohoo! It's the weekend!")  
+						  else:
+						    print("Have a good day!")
+
+						hello("Saturday")
+						hello("Friday")
+						hello("Tuesday")
+
+					 </code>
+					</pre>
+        			</section>
+				
+				<section>
+					<h3>Try to break your code!</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  elif day in ["Saturday", "Sunday"]:
+						    print("Woohoo! It's the weekend!")  
+						  else:
+						    print("Have a good day!")
+
+						hello("saturday")
+
+					 </code>
+					</pre>
+        			</section>
+				
+				<section>
+					<h3>Making the code more robust</h3>
+					<pre>
+					<code data-trim data-noescape class="python">
+						def hello(day):
+							print("Happy "+day+"!")
+							#change day into all lowercase
+							day = day.lower()
+							if day == "friday":
+								print("It's almost the weekend!")
+							elif day in ["saturday", "sunday"]:
+								print("Woohoo! It's the weekend!")
+							else:
+								print("Have a good day")
+
+						hello("saturday")
+						hello("FRIDAY")
+
+					 </code>
+					</pre>
+        			</section>	
+					
 				<!-- MUST USE/SHOW SLIDE -->
 				<!-- Course Survey -->
 				<section>
@@ -350,7 +427,6 @@
 					<h3><a href="https://girldevelopit.com/events/details/girl-develop-it-virtual-classes-presents-intro-to-git-and-github/">Intro to Git & Github</a></h3>
 				</section>	
 				
-
 				<!-- Thank You -->
 				<section>
 					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
